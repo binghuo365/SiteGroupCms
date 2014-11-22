@@ -1,0 +1,162 @@
+*{padding:0; margin:0;}
+body{font-family:"微软雅黑", "宋体", Arial; font-size:12px; line-height:24px; background:url(../images/gwfn_01.jpg) 0 0 repeat-x #fff;}
+img{border:none;}
+ul{list-style:none;}
+.t10{margin-top:10px;}
+
+.logo{background:url(../images/gwfn_03.jpg) top center no-repeat; height:93px;}
+
+.nav{height:49px; width:1150px; margin:0 auto;}
+.nav li{float:left;}
+.nav a{float:left; height:49px;}
+.n1{background-image:url(../images/gwfn_06.jpg); width:167px;}
+.n2{background-image:url(../images/gwfn_07.jpg); width:91px;}
+.n3{background-image:url(../images/gwfn_08.jpg); width:104px;}
+.n4{background-image:url(../images/gwfn_09.jpg); width:117px;}
+.n5{background-image:url(../images/gwfn_10.jpg); width:116px;}
+.n6{background-image:url(../images/gwfn_11.jpg); width:116px;}
+.n7{background-image:url(../images/gwfn_12.jpg); width:89px;}
+.n8{background-image:url(../images/gwfn_13.jpg); width:85px;}
+.n9{background-image:url(../images/gwfn_14.jpg); width:90px;}
+.n10{background-image:url(../images/gwfn_15.jpg); width:175px;}
+.active .n1, .current .n1{background-image:url(../images/hover/gwfn_06.jpg);}
+.active .n2, .current .n2{background-image:url(../images/hover/gwfn_07.jpg);}
+.active .n3, .current .n3{background-image:url(../images/hover/gwfn_08.jpg);}
+.active .n4, .current .n4{background-image:url(../images/hover/gwfn_09.jpg);}
+.active .n5, .current .n5{background-image:url(../images/hover/gwfn_10.jpg);}
+.active .n6, .current .n6{background-image:url(../images/hover/gwfn_11.jpg);}
+.active .n7, .current .n7{background-image:url(../images/hover/gwfn_12.jpg);}
+.active .n8, .current .n8{background-image:url(../images/hover/gwfn_13.jpg);}
+.active .n9, .current .n9{background-image:url(../images/hover/gwfn_14.jpg);}
+.active .n10, .current .n10{background-image:url(../images/hover/gwfn_15.jpg);}
+
+.mainBox, .secBox{width:980px; margin:0 auto;}
+
+.main-first{padding-top:15px;}
+.main-first .secNav{float:left; width:305px;}
+.main-first .flashBox{float:right; width:670px; height:348px; overflow:hidden;}
+.main-first .flashBox img{display:block; width:670px; height:348px;}
+
+.main-second{height:46px; overflow:hidden; background:url(../images/gwfn_27.jpg) 0 0 repeat-x;}
+.main-second h2{float:left; height:46px; width:106px; background:url(../images/gwfn_26.jpg) 0 0 no-repeat;}
+#noticeBox{float:right; height:46px; overflow:hidden; background:url(../images/gwfn_30.jpg) right top no-repeat; width:865px;}
+#noticeBox a{color:#004276; line-height:45px; text-decoration:none; margin-right:25px;}
+#noticeBox a:hover{text-decoration:underline;}
+#noticeBox ul{width:10000px; height:46px;}
+#noticeBox ul li{float:left;}
+
+
+.newsBox{float:left; width:720px; background:url(../images/gwfn_40.jpg) 0 0 repeat-y;}
+.newsBox .picBox{float:left; display:inline; width:300px; height:245px; overflow:hidden; margin:20px 0 5px 15px; position:relative;}
+.newsBox .picBox ul{position:relative; height:245px; position:relative;}
+.newsBox .picBox ul li{float:left; width:300px; height:245px; overflow:hidden;}
+.newsBox .picBox .btnBg{position:absolute;width:300px;height:20px;left:0;bottom:0;background:#000;}
+.newsBox .picBox .btn{position:absolute;width:280px;height:10px;padding:5px 10px;right:0;bottom:0;text-align:right;}
+.newsBox .picBox .btn span{display:inline-block;_display:inline;_zoom:1;width:25px;height:10px;_font-size:0;margin-left:5px;cursor:pointer;background:#fff;}
+
+.newsBox .newsListBox{float:right; display:inline; margin-right:20px; width:370px;}
+.topNews{height:50px; overflow:hidden;}
+.topNews h2{height:22px; overflow:hidden;}
+.topNews h2 a{color:#036e96; font-size:18px; line-height:20px; text-decoration:none;}
+.topNews p{color:#036e96; padding-top:15px; text-indent:2em;}
+.leftList li{background:url(../images/gwfn_dot.jpg) 5px 12px no-repeat; padding-left:15px; border-bottom:dashed 1px #cccccc;}
+.leftList li span{float:right; padding-left:15px; color:#999}
+.leftList li a{color:#3c3d3d; text-decoration:none; line-height:26px;}
+.leftList li a:hover{background-color:#09F; color:#fff;}
+
+.main-third-right{float:right; width:255px;}
+.picLink{height:216px;}
+.picLink a{float:left; width:127px; height:110px; background:url(../images/gwfn_37.jpg) 0 0 no-repeat;}
+.picLink a.enLink{background-position:-127px 0;}
+.picLink a.radioLink{background-position:0 -110px;}
+.picLink a.libLink{background-position:-127px -110px;}
+.pptShow a{display:block; margin-top:5px;}
+
+.main-fifth-left{float:left; width:313px; background:url(../images/gwfn_67.jpg) 0 0 repeat-y;}
+.main-fifth-left .videoBox{width:300px; height:222px; overflow:hidden; margin:0 auto;}
+.main-fifth-left .leftList{padding:0 6px;}
+
+.main-fifth-right{float:right; width:660px;}
+.main-fifth-rightL{float:left; width:397px; background:url(../images/gwfn_63.jpg) 0 0 repeat-y;}
+.main-fifth-rightL .topNews{margin:10px 15px; margin-bottom:0; height:150px; overflow:hidden;}
+.main-fifth-rightL .topNews p{padding-top:8px;}
+.main-fifth-rightL .leftList{padding:0 15px 2px 15px;}
+
+.main-fifth-rightR{float:right; width:255px;}
+.sortListBox{background:url(../images/gwfn_65.jpg) 0 0 repeat-y;}
+.tabBox{height:36px;}
+.tabBox span{float:left; width:120px; height:36px; background:url(../images/gwfn_59.jpg) 0 0 no-repeat; cursor:pointer;}
+.tabBox .resourceRank{background-position:-120px 0; width:135px;}
+.tvTabBox{height:35px;}
+.tvTabBox span{background:url(../images/gwfn_59_1.jpg) 0 0 no-repeat; height:35px;}
+.tvTabBox .hotTvRank{background-position:-120px 0; width:135px;}
+.sortList{padding:8px 4px;}
+.sortList li{border-bottom:dashed 1px #ccc; line-height:30px;}
+.sortList b{font-weight:normal; display:inline-block; border:solid 1px #ccc; line-height:14px; padding:0 2px; margin-right:4px;}
+.sortList .first b{color:#fb0707;}
+.sortList .second b{color:#fe9b00;}
+.sortList .third b{color:#02fe1a;}
+.sortList span{float:right;}
+.sortList a{color:#036e96; text-decoration:none; display:inline-block;}
+
+.sec-second{border-bottom:solid 1px #8e8e8e; height:56px;}
+.sec-second h2{float:left; background:url(../images/gwfn_sec_07.jpg) 0 22px no-repeat; padding-left:25px; padding-right:30px; color:#2e42bb; font-size:24px; line-height:56px; font-weight:normal;}
+.sec-second div{padding-top:22px;}
+.sec-second div a{color:#020202; text-decoration:none;}
+.sec-second div a:hover{text-decoration:underline;}
+
+.sec-third-left{float:left; width:720px;}
+.sec-third-left .newsBox{background:none; float:none;}
+
+.sec-page-list li{border-bottom:dashed 1px #eee; padding:15px; padding-bottom:0;}
+.sec-page-list li div{background:url(../images/gwfn_sec_10.jpg) 0 9px no-repeat; padding-left:15px; line-height:30px;}
+.sec-page-list li div span{float:right;}
+.sec-page-list li div a{color:#036e96; font-size:14px; text-decoration:none;}
+.sec-page-list li div a:hover{text-decoration:underline;}
+.sec-page-list li p{color:#535353;}
+
+.pageIndex{text-align:center; padding-top:20px;}
+.pageIndex a{color:#3e3e3e; text-decoration:none; margin:0 8px;}
+.pageIndex a:hover{text-decoration:underline;}
+
+.sec-third-right{float:right; width:255px;}
+
+
+.jpkc-third-left{float:left; width:231px;}
+.classListBox{padding:0 15px; background:url(../images/gwfn_jpkc_10.jpg) 0 0 repeat-x; padding-top:10px;}
+.classListBox ul li a{color:#020202; line-height:37px; text-decoration:none; text-align:center; display:block; background:url(../images/gwfn_jpkc_21.jpg) 0 0 no-repeat;}
+.classListBox ul li a:hover, .classListBox ul li .current{color:#ac0000;}
+.classListBox .yearList li a{background-position:0 -38px;}
+
+.jpkc-third-right{float:right; width:730px;}
+.classType{font-size:14px; line-height:30px; border-bottom:dashed 1px #bfbfbf;}
+.classListTable{width:100%; line-height:35px; margin-top:8px;}
+.classListTable thead{height:35px; background:url(../images/gwfn_jpkc_13.jpg) 0 0 no-repeat #cff065;}
+.classListTable th.t1{width:295px;}
+.classListTable td.t1{padding-left:34px; text-align:left;}
+.classListTable td{text-align:center;}
+.classListTable td.t5{background:url(../images/gwfn_jpkc_17.jpg) center center no-repeat;}
+.classListTable a{color:#000; text-decoration:none;}
+.classListTable tbody tr{background-color:#eeeeee;}
+.classListTable tbody tr.even{background-color:#dedede;}
+.classListTable tbody tr.hover{background-color:#CCC;}
+
+.pptList li{padding-bottom:10px;}
+.pptTable{border:solid 0px #ccc; border-bottom-width:1px; border-right-width:1px; font-size:14px;}
+.pptTable td{border:solid 0px #ccc; border-left-width:1px; border-top-width:1px; padding-left:4px;}
+.pptTable .img{text-align:center; vertical-align:middle;}
+.pptTable td span{color:#036e96;}
+.pptTable .name span{font-size:18px;}
+.pptTable a{color:#333; text-decoration:none;}
+.pptTable a:hover{color:#f00; text-decoration:underline;}
+
+.detail-title{text-align:center; color:#036e96; font-size:18px; line-height:35px;}
+.detail-detail{border-bottom:solid 1px #ccc; text-align:center; margin:0 15px;}
+
+.sec-second h3{float:left; font-size:24px; line-height:56px; font-weight:normal;}
+.sec-second h3 a{display:inline-block; padding-left:25px; color:#999; margin-right:30px; text-decoration:none; }
+.sec-second h3 a.current{color:#2e42bb; background:url(../images/gwfn_sec_07.jpg) 0 22px no-repeat;}
+.sec-second h3 a.active{color:#2e42bb;}
+
+
+.footer{background:url(../images/gwfn_75.jpg) 0 0 repeat-x; height:130px; text-align:center; color:#505050; line-height:70px;}

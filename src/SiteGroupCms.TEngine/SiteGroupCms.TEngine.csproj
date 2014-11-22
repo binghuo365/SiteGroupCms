@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8EDEE1BC-1BD8-45E2-88D0-8108218E766F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SiteGroupCms.TEngine</RootNamespace>
+    <AssemblyName>SiteGroupCms.TEngine</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ITagHandler.cs" />
+    <Compile Include="Parser\AST\BinaryExpression.cs" />
+    <Compile Include="Parser\AST\ArrayAccess.cs" />
+    <Compile Include="Parser\AST\DoubleLiteral.cs" />
+    <Compile Include="Parser\AST\MethodCall.cs" />
+    <Compile Include="Parser\AST\IntLiteral.cs" />
+    <Compile Include="Parser\AST\TagIf.cs" />
+    <Compile Include="Parser\AST\FCall.cs" />
+    <Compile Include="Parser\AST\TagAttribute.cs" />
+    <Compile Include="Parser\AST\Element.cs" />
+    <Compile Include="Parser\AST\Expression.cs" />
+    <Compile Include="Parser\AST\FieldAccess.cs" />
+    <Compile Include="Parser\AST\Name.cs" />
+    <Compile Include="Parser\AST\StringExpression.cs" />
+    <Compile Include="Parser\AST\StringLiteral.cs" />
+    <Compile Include="Parser\AST\Tag.cs" />
+    <Compile Include="Parser\AST\TagClose.cs" />
+    <Compile Include="Parser\AST\Text.cs" />
+    <Compile Include="Parser\ParseException.cs" />
+    <Compile Include="Parser\TagParser.cs" />
+    <Compile Include="ITemplateHandler.cs" />
+    <Compile Include="StaticTypeReference.cs" />
+    <Compile Include="TemplateManager.cs" />
+    <Compile Include="Parser\TemplateLexer.cs" />
+    <Compile Include="Parser\TemplateParser.cs" />
+    <Compile Include="Parser\Token.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings_user.cs" />
+    <Compile Include="Template.cs" />
+    <Compile Include="TemplateRuntimeException.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="VariableScope.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiteGroupCms.Utils\SiteGroupCms.Utils.csproj">
+      <Project>{E42D51BB-0368-4BBC-BF69-89F11B42E675}</Project>
+      <Name>SiteGroupCms.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+</Project>

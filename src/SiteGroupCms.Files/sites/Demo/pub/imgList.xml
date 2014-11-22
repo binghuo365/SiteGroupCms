@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='GB2312'?>
+<imgList>
+<pic>
+<list path="swf_img/img1.jpg"   smallpath="swf_img/img1.png" smallinfo="长沙理工大学     校园信息化办公室">http://yunzuofang.com</list>
+<list path="swf_img/img2.jpg"   smallpath="swf_img/img2.png" smallinfo="校园信息化办公室     现代教育技术中心">http://10.30.16.39/01/01/baoming/</list>
+<list path="swf_img/img3.jpg"   smallpath="swf_img/img3.png" smallinfo="校园信息化办公室     网络中心">http://10.30.16.39/01/01/baoming/</list>
+</pic>
+<rollTime fade_in="10">6</rollTime>
+<text font="Arial，verdana,宋体" size="12" bold="false" color="0xcacaca"></text>
+</imgList>

@@ -1,0 +1,21 @@
+*{padding:0; margin:0;}
+body{font-family:"微软雅黑", "宋体", Arial; font-size:12px; line-height:24px;}
+.logo{padding:50px 0 50px 50px;}
+.wraper{}
+.main{background:url(/lib/images/login/rctg_07.png) 0 0 repeat-x; padding-top:3px; background-color:#145db1; border-bottom:solid 2px #dfdfda;}
+.main-bg{float:left;}
+.login-form-box{float:right; width:340px; line-height:26px;}
+.login-form-box h2{background:url(/lib/images/login/rctg_12.png) 0 25px no-repeat; height:80px;}
+.login-form-box div{height:35px;}
+.login-form-box label{display:inline-block; width:50px; color:#fff; line-height:26px;}
+.login-form-box label span{width:1em; display:inline-block;}
+.login-form-box input{display:inline-block; height:26px; width:180px; border:none; background-color:#fff; line-height:26px;}
+.login-form-box .checkcode-div{width:230px;}
+.login-form-box .checkcode-div input{width:90px;}
+.login-form-box .checkcode-div img{margin-left:10px; width:80px; height:26px; float:right;}
+.login-form-box .button-div{position:relative; padding-left:12px;}
+.login-form-box .button-div input {display:inline-block; border:none; background-image:url(/lib/images/login/rctg_16.png); width:95px; height:30px; cursor:pointer; margin-left:15px;}
+.login-form-box .login-submit{}
+.login-form-box .login-reset{ background-position:-100px 0;}
+.footer{line-height:30px; color:#6e6e6e; text-align:center; padding:15px;}
+

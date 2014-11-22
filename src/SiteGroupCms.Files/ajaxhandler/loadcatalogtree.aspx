@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="loadcatalogtree.aspx.cs" Inherits="SiteGroupCms.ajaxhandler.loadcatalogtree" %>

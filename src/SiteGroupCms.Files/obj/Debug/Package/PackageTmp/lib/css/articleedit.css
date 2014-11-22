@@ -1,0 +1,42 @@
+﻿#content1{height:700px;}
+	#space {height:10px; width:800px; float:none;}
+	.pic{float:none; width:800px; text-indent:5px; margin-top:5px;margin-bottom:10px;}
+    .atts{float:none; width:100px;text-indent:5px; margin-top:5px;margin-bottom:10px; width:100px;  }
+    #imglists{ width:800px; height:auto; float:none; margin-left:10px;}
+    #imglists img{ width:50px; height:50px; margin-right:10px;}
+    #attslist{width:auto; height:auto; float:left; margin-left:10px; margin-top:10px;}
+    #ulattslist{ list-style-position:inside; height:auto;}
+    #formcontent{width:100%; height:1040px;}
+    a:hover{color:Red;}
+    
+#tags
+{
+	margin-top:5px;
+	}    
+#tags LI {
+	BACKGROUND: url("/lib/images/tab/tagleft.gif") no-repeat left bottom; FLOAT: left; MARGIN-RIGHT: 1px; LIST-STYLE-TYPE: none; HEIGHT: 23px
+}
+#tags LI A {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: url("/lib/images/tab/tagright.gif") no-repeat right bottom; FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #999;LINE-HEIGHT: 23px; PADDING-TOP: 0px; HEIGHT: 23px; TEXT-DECORATION: none
+}
+#tags LI.emptyTag {
+	BACKGROUND: none transparent scroll repeat 0% 0%; WIDTH: 4px
+}
+#tags LI.selectTag {
+	BACKGROUND-POSITION: left top; MARGIN-BOTTOM: -2px; POSITION: relative; HEIGHT: 25px
+}
+#tags LI.selectTag A {
+	BACKGROUND-POSITION: right top; COLOR: #000; LINE-HEIGHT: 25px; HEIGHT: 25px
+}
+.tagContent
+{
+	clear:both;
+	border-top:2px solid #ccc;
+	display:none;
+	
+	}
+.tagContent.selectTag
+{
+	display:block;
+}
+

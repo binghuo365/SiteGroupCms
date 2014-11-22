@@ -1,0 +1,255 @@
+﻿body
+{    
+
+    text-align:center;
+    font-size:12px;
+    font-family:'宋体';
+    margin:0px;
+	background-color:#ffffff;
+}
+
+#wrapper
+{
+    width:100%;
+    text-align:left;
+}
+
+a:link{
+	color:#000000;
+	text-decoration:none;
+}
+a:visited{
+	color:#000000;
+	text-decoration:none;
+}
+a:hover{
+	color:red;
+	text-decoration:none;
+}
+
+/*-----share.begin---------------------------------------------*/
+.clearBoth{ clear:both; }
+
+.border-all{ border:solid 1px #C2C9D1; }
+
+.picBorder{ border:solid 1px #010101; }
+
+.autoHeight{ height:auto; }
+
+.displayInline{ display:inline; }
+
+.margin-top-6 { margin-top:6px; }
+
+.line-1{
+	background-image:url(../Images/line-1.jpg);
+	background-repeat:repeat-x;
+	height:10px;
+}
+
+.mustFillFlag{ color:Red; font-weight:normal; }
+
+.table_tr td{
+	border-bottom:#ddd 1px solid;
+}
+/*-----share.end---------------------------------------------*/
+
+
+/*当前位置*/
+
+.currLocation
+{
+    width:100%;
+    border-bottom:solid 1px #98B1C8;    
+}
+.currLocation p
+{
+    padding:10px;
+    padding-top:12px;
+    height:14px;
+    padding-left:5px;
+    font-weight:bold; 
+    color:#174B73;
+    margin:0px;
+}
+.currLocation-TbContainer
+{
+    padding:8px;
+    padding-left:5px;
+    font-weight:bold; 
+    color:#174B73;
+    margin:0px;
+}
+
+.currLocation-Left
+{
+    float:left;
+    padding:8px;
+    padding-left:15px;
+    font-weight:bold; 
+    color:#174B73;
+    margin:0px;
+}
+.currLocation-right
+{
+    float:right;
+    padding:8px;
+    padding-left:15px;
+    font-weight:bold; 
+    color:#174B73;
+    margin:0px;
+}
+
+
+/***说明文字样式***/
+
+.note
+{
+    width:100%;
+    border-bottom:solid 1px #98B1C8;    
+    background-color:#E6F7D0;
+}
+.note p
+{
+    padding:6px;
+    padding-left:10px;
+    color:#174B73;
+    margin:0px;
+}
+
+/*分页样式*/
+.pageNav
+{
+    width:100%;
+    border-top:dashed 1px #cccccc;
+    padding:5px;
+    margin:0px;
+}
+
+.pageNav-top
+{
+    width:100%;
+    border-bottom:dashed 1px #cccccc;
+    padding:2px;
+}
+.pageNav-top p{
+    margin:0px;
+}
+
+.pageNav-left
+{
+    float:left;
+    padding:4px;
+}
+.pageNav-right
+{
+    float:right;
+    padding:4px;
+}
+.pageToBox{
+    height:12px;
+    width:20px;
+    border:solid 1px #cccccc;
+}
+
+/*表单式样*/
+.input
+{
+    font-size:12px;
+    padding:2px;
+    height:15px;
+    border:solid 1px #174B73;
+}
+
+.btn{ 
+    font-size:12px;
+    color:#174B73;
+    border:solid 1px #98B1C8;
+    padding:2px;
+    height:21px;
+    letter-spacing:2px;
+    background-image:url(../Images/btnbg.gif); 
+}
+
+
+.text12px
+{
+    font-size:12px;
+}
+
+.text14px
+{
+    font-size:14px;
+}
+
+.text16px
+{
+    font-size:14px;
+}
+
+.lh_150
+{
+    line-height:150%;
+}
+
+.lh_170
+{
+    line-height:170%;
+}
+
+.bold
+{
+    font-weight:bold;
+}
+
+.underline
+{
+    text-decoration:underline;
+}
+
+.shadow
+{
+	filter:DropShadow(Color=#000000,offx=1,offy=1,positive=true);
+	font-size:12px;
+}
+
+.alignleft
+{
+    text-align:left;
+}
+.aligncenter
+{
+    text-align:center;
+}
+.alignright
+{
+    text-align:right;
+}
+.valignmiddle
+{
+    vertical-align:middle;
+}
+.valigntop
+{
+    vertical-align:top;
+}
+.valignbottom
+{
+    vertical-align:bottom;
+}
+
+.margin-top-5{ margin-top:5px; }
+.margin-bottom-5{ margin-bottom:5px; }
+
+
+/*-----边框为1像素的表格.begin---------------------------------------------*/
+.table-border-1px
+{
+   border: 1px solid #98b1c8;
+   border-collapse:collapse;
+}
+
+.td-border-1px
+{
+   border: 1px solid #98b1c8;
+}
+/*-----边框为1像素的表格.end---------------------------------------------*/

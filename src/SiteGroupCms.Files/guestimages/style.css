@@ -1,0 +1,182 @@
+*{font-family: "Microsoft YaHei", SimSun;}
+body
+{
+	margin:0;
+	background-color:#FFF;
+	font-family: "Microsoft YaHei", SimSun;
+	color:#FFF;
+}
+section h2,
+blockquote,
+a.join
+{
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#wrapper
+{
+	width: 870px;
+	margin:10px auto;
+	overflow:hidden;
+	color:#c28437;
+}
+header
+{
+	height:222px;
+	background:url(../images/header.jpg);
+	text-indent:-99999px;
+}
+
+header *
+{
+	margin:0;
+}
+.content
+{
+	margin:0 0 0 0;
+	background: #FFFFFF;
+	height:560px;
+	position:relative;
+}
+.content section
+{
+	margin:10px;
+	position:absolute;
+	overflow:hidden;
+}
+section.left
+{
+	left:0;
+	width:640px;
+	padding-left:100px;
+}
+section.right
+{
+	right:0;
+	padding-right:100px;
+	width:0;
+}
+section.top
+{
+	top:0;
+	height:450px;
+}
+section.bottom
+{
+	bottom:0;
+	height:80px;
+}
+section.intro
+{
+	background-image:url(../images/bg1.jpg);
+	font-size:24px;
+}
+section.programmer
+{
+	background-image:url(../images/bg2.jpg);
+}
+section.designer
+{
+	background-image:url(../images/bg3.jpg);
+}
+section.editor
+{
+	background-image:url(../images/bg4.jpg);
+}
+section .wrapper
+{
+	position:absolute;
+	width:640px;
+	height:450px;
+}
+section.right .wrapper
+{
+	right:100px;
+}
+section.left .wrapper
+{
+	left:100px;
+}
+section.bottom .wrapper
+{
+	bottom:0px;
+}
+section .wrapper #details
+{
+	position:absolute;
+	bottom:25px;
+}
+
+section.intro .wrapper
+{
+	top:180px;
+	left:230px;
+	width:320px;
+}
+section.intro blockquote
+{
+	margin:0;
+	font-size:30px;
+}
+section.intro p
+{
+	margin:10px;
+	font-size:18px;
+	text-align:right
+}
+section h2
+{
+	font-size:24px;
+	font-weight:normal;
+	font-family:
+	margin:30px;
+}
+section ul
+{
+	line-height:160%;
+	font-size:16px;
+	border-bottom:#DDDDDD 1px solid;
+	padding:0 5px 10px 30px;
+	margin:30px 10px 15px 60px;
+}
+section #details a,
+section #details a:visited,
+section #details a:hover
+{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+section #details a.join
+{
+	float:right;
+	width:160px;
+	text-align:center;
+	padding:10px 0;
+	margin: 0 30px 20px 0;
+	font-size:20px;
+	border-bottom:#DDDDDD 1px solid;
+}
+section.programmer #details a.join
+{
+	background: #b1d397;
+}
+section.designer #details a.join
+{
+	background: #b1d397;
+}
+section.editor #details a.join
+{
+	background: #b1d397;
+}
+.tip
+{
+	display:block;
+	font-size:10px;
+	position:absolute;
+	bottom:-20px;
+	background:#693640;
+	width: 100%;
+	margin-left: -100px;
+	padding:4px 0;
+	text-align: center;
+}

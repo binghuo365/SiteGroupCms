@@ -1,0 +1,21 @@
+1.top1
+2.添加文章 datetime有问题
+3.文件管理默认目录不存在则报错
+4.需要初始化的表有
+yy_doinfo 用来记录操作类型表
+yy_favoriteinfo 快捷启动的种类
+yy_userinfo 用户权限表
+yy_personinfo 用户基本信息表
+yy_rightinfo 权限表
+yy_roleinfo 角色表
+yy_siteinfo 站点表
+yy_templateinfo 模板表
+
+2005的datetime到2000变成 了8bit 导致溢出
+新闻中跟时间有关的全部又问题包括 插入和修改
+
+添加文章让父亲级刷新
+
+修改了审核时间 发布时间
+
+没做的 站点的管理

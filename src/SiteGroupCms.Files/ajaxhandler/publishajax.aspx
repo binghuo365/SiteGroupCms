@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="publishajax.aspx.cs" Inherits="SiteGroupCms.ajaxhandler.publishajax" %>

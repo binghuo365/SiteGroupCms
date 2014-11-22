@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello! 云作坊</title>
+<meta name="keywords" content="长沙理工大学技术开发团队，长沙理工大学云作坊" />
+<meta name="description" content="云作坊是归属于长沙理工大学现代技术教育中心的一个学生技术组织。先后开发了大量的web系统。" />
+<link rel="stylesheet" type="text/css" href="/sites/Demo/templates/atts/css/base.css" />
+<script type="text/javascript" src="/sites/Demo/templates/atts/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="/sites/Demo/templates/atts/js/pagging.js"></script>
+<script>
+$(function(){
+	var aImg = document.getElementById("nav").getElementsByTagName("img");
+	for(i = 0; i < aImg.length; i+=2) {
+		aImg[i].onmouseover = function () {
+			this.src = this.src.replace("out","hover");
+		}
+		
+		aImg[i].onmouseout = function () {
+			this.src = this.src.replace("hover","out");
+		}
+	}
+})
+</script>
+<style type="text/css">
+div#topdis {
+	background:url(/sites/Demo/templates/atts/images/xinwen.jpg) no-repeat;
+	width:950px;
+	height: 134px;
+	margin-top:-2px;
+}
+.clear {
+	clear: both;
+}
+#center {
+	margin: 0 auto;
+	clear: both;
+}
+.mabox {
+    clear: both;
+    margin: 0 auto;
+    width: 1003px;
+}
+.place {
+    background: url("/sites/Demo/templates/atts/images/icon15.gif") no-repeat scroll 0 0 transparent;
+    clear: both;
+    color: #FFFFFF;
+    height: 24px;
+    line-height: 24px;
+    margin: 8px 0 0 -13px;
+    padding: 0 0 9px 18px;
+    position: relative;
+    width: 316px;
+}
+.place a {
+    color: #FFFFFF;
+}
+.mleft {
+    background: url("/sites/Demo/templates/atts/images/bgs0.gif") repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E3E3E3;
+    float: left;
+    margin: 0 auto;
+    min-height: 500px;
+    width: 950px;
+}
+.mbox {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D5D5D5;
+    clear: both;
+    margin: 1px 6px 6px;
+    min-height: 700px;/*限制最小高度*/
+}
+.ndetail {
+    clear: both;
+    padding: 10px 15px;
+}
+h1.title {
+    clear: both;
+    color: #06328D;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+}
+.ninfo {
+    border-bottom: 1px dashed #DDDDDD;
+    clear: both;
+    color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.acontent {
+    clear: both;
+    color: #000000;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 10px;
+}
+.neswlist {
+    clear: both;
+    padding: 15px;
+}
+ol, ul, li, dl, dt, dd {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.neswlist dl {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;    clear: both;
+    height: 102px;
+    margin-bottom: 10px;
+    overflow: hidden;
+	
+}
+.neswlist dl dt {
+    float: left;
+    height: 102px;
+    overflow: hidden;
+    width: 141px;
+}
+.neswlist dl dt img {
+    height: 102px;
+    width: 141px;
+}
+.neswlist dl dd {
+    float: left;
+    overflow: hidden;
+    width: 740px;
+	margin-left:20px;
+}
+.neswlist dl dd h3 {
+    clear: both;
+    color: #B60D10;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.neswlist dl dd h3 a {
+    color: #B60D10;
+}
+.neswlist dl dd p {
+    clear: both;
+    height: 66px;
+    line-height: 22px;
+    overflow: hidden;
+}
+.neswlist dl dd p a {
+    color: #B60D10;
+    text-decoration: underline;
+}
+ul.u9 {
+    clear: both;
+}
+ul.u9{
+}
+ul.u9 li {
+    background: url("/sites/Demo/templates/atts/images/line06.gif") repeat-x scroll center bottom transparent;
+    clear: both;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    position: relative;
+}
+ul.u9 li a {
+/*    background: url(".//sites/Demo/templates/atts/images/icon61.gif") no-repeat scroll 5px 4px transparent;
+*/    color: #22639B;
+/*    padding-left: 18px;
+*/}
+ul.u9 li span {
+	color: #6F6F6F;
+	font-family: Arial,Helvetica,sans-serif;
+	position: absolute;
+	right: 2px;
+	top: -1px;
+}
+</style>
+</head>
+
+<body>
+
+<jcms:include file="/sites/Demo/templates/2012-12-26--131955.htm" />  
+<div class="main">
+  
+  <div id="center"> 
+    <div id="cc">
+      <div id="topdis"> </div>
+<div class="mleft">
+<div class="place">
+当前位置：<jcms:site.page.nav/>
+</div>
+<div class="mbox">
+<div class="neswlist">
+<dl>
+<dt><img src="/sites/Demo/templates/atts/images/0002.jpg" /></dt>
+<dd>
+<h3><a href="/news/detail/157">百度创始人李彦宏：判断你内心的"True North"</a></h3>
+<div>内心有理想，困难也会轻如鸿毛，不相信理想，只会感觉周遭一片黑暗。有激情去克服困难，靠的不是金钱利益的趋使，而是一种简单清晰的使命感。李彦宏认为找到自己的用武之地对一个学计算机的人来说非常重要："首先要判断什么是你内心的'true north'，真正让你向往的东西也会有好和不好的地方，但你的态度和对自己了解能够维持自己的信念。"</div>
+</dd>
+<div class="clear"></div>
+</dl>
+<ul class="u9" style="display: none"  id="news_list_ul">
+
+<jcms:contentloop   repeatnum="100"  selectids="56,57,58">
+						<#foreach content>
+                         
+<li><a href="$_{channellink}">[$_{channelname}]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="$_{url}">${field.title}</a><span>${cdatestring(field.addtime,"yy-MM-dd")} </span></li>               
+						<#/foreach>
+</jcms:contentloop> 
+</ul>
+    <!--显示内容的div-->						
+ <ul class="mList" id="content">
+
+</ul> 
+
+
+<div class="fanyelist">
+ <input type='hidden' id='CP' value='"1"/'>
+         <span id="pl"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+
+<script type='text/javascript'>
+ toPage(1);
+ showPageLineNum();
+</script>   
+ <jcms:include file="/sites/Demo/templates/2012-12-26--131721.htm" />  
+  
+</body>
+</html>

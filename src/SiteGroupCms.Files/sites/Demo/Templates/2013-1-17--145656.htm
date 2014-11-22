@@ -1,0 +1,5 @@
+<jcms:contentloop   repeatnum="100"  fatherid="55">
+<#foreach content>
+<li><a href="$_{channellink}">[$_{channelname}]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="$_{url}">${field.atts}${field.img}${field.title}$_{img}	</a><span>${cdatestring(field.addtime,"yy-MM-dd")} </span></li>               
+<#/foreach>
+</jcms:contentloop> 

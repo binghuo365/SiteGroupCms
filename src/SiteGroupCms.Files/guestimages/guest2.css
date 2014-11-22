@@ -1,0 +1,40 @@
+/* CSS Document */
+
+#flash{
+	
+width:950px;	
+height:134px;
+margin:0px auto;
+	}
+#third{
+margin:10px auto;
+width:950px;
+height:auto;
+	}
+#rightnewslist
+{
+	background-image:url(/guestimages/m_menu_bg.gif);
+	background-repeat:repeat-x;	
+	margin-left:0px;
+	height:auto;
+	width:950px;
+	font-size:14px;
+	color:#666;
+	font-weight:bold;
+	}
+h1{
+	font-size:14px;
+	margin-left:20px;
+	margin-top:10px;
+
+	}
+#form input,textarea{
+	border:1px solid #999;
+	width:400px;
+	height:20px;
+	}
+#form{
+	margin:0 auto;
+	width:950px;
+	}
+	

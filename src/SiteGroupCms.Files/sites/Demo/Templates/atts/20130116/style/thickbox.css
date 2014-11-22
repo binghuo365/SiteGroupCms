@@ -1,0 +1,74 @@
+@charset "utf-8";
+body {background-color:#fff;}
+html, body {height:100%;}/*高度*/
+html body{font:12px Arial, Helvetica, sans-serif;color:#333333}
+html>body{font:12px Arial, Helvetica, sans-serif;color:#333333}
+#TB_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:80;
+	width: 100%;
+	height: 100%;
+ 	background: none repeat scroll 0 0 #000000;	
+	filter:alpha(opacity=50);
+ 	opacity:0.4;
+}
+#TB_window {
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	_position: absolute;
+	background: #fff;/*弹出内容背景颜色*/
+	z-index: 81;
+	color:#000000;
+	display:none;
+	border:6px solid #BBB;/*弹出框的边框属性*/
+	border-radius: 6px;
+ 	opacity: 1;
+}
+#TB_caption{
+	height:25px;
+	padding:10px 30px 10px 25px;
+}
+#TB_closeWindow{
+	height:25px;
+	padding:10px 25px 10px 0;
+	float:right;
+}
+#TB_closeAjaxWindow{
+	padding:5px 10px 7px 0;
+	margin-bottom:1px;
+	text-align:right;
+	color: white;
+	overflow: hidden;
+	font-size:14px;
+	line-height:24px;
+	background-color:#0698E9;/*弹出框背景颜色*/
+}
+#TB_ajaxContent{
+	padding:2px 15px 15px 15px;
+	overflow:hidden;
+	background:#FFF;
+}
+
+#TB_load{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+	overflow: visible;
+	visibility: visible;
+	display: block;
+	z-index:101;
+}
+#TB_loadContent{
+	margin-left: -125px;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	width: 250px;
+	height: 100px;
+	visibility: visible;
+}

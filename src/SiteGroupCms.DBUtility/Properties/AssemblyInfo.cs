@@ -1,0 +1,13 @@
+﻿using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+[assembly: AssemblyTitle("SiteGroupCms.DBUtility")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("将博开发团队")]
+[assembly: AssemblyProduct("SiteGroupCms.DBUtility")]
+[assembly: AssemblyCopyright("")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+[assembly: ComVisible(false)]
+[assembly: AssemblyVersion("5.2.5.0706")]

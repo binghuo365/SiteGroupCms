@@ -1,0 +1,13 @@
+<ul>
+<jcms:channelloop selectids="55|68|69">
+<li><a href={$ChannelLinktitle}”>{$ChannelName} :</a>
+<ul>
+<jcms:contentloop  channelid="{$ChannelId}"  isppt="1” repeatnum="2" >
+<#foreach collection="${contents}" var="field" index="i">
+<li><a href="$_{url}" title="${field.title}" style="color:${field.color}">${field.title} ${field.addtime}  </a></li>
+<#/foreach>
+</jcms:contentloop>
+</ul>
+</li>
+</jcms:channelloop>
+</ul>

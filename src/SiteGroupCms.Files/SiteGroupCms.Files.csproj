@@ -1,0 +1,3226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C60AF83-04A8-4721-A5BB-F77E0684B678}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteGroupCms</RootNamespace>
+    <AssemblyName>SiteGroupCms</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="chaokers.cn.FSManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\chaokers.cn.FSManager.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="Ucfar.Data">
+      <HintPath>..\UsingDll\Ucfar.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="UcfarPager">
+      <HintPath>..\UsingDll\UcfarPager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajaxhandler\guestdo.aspx" />
+    <Content Include="ajaxhandler\loadguestlist.aspx" />
+    <Content Include="ajaxhandler\loadright.aspx" />
+    <Content Include="ckplayer\assets\adjustment.swf" />
+    <Content Include="ckplayer\assets\buffer.swf" />
+    <Content Include="ckplayer\assets\cklogo.png" />
+    <Content Include="ckplayer\assets\images_adv_skip.png" />
+    <Content Include="ckplayer\assets\images_buttom_bg.png" />
+    <Content Include="ckplayer\assets\images_close_adv.png" />
+    <Content Include="ckplayer\assets\images_Fashf_on.png" />
+    <Content Include="ckplayer\assets\images_Fashf_out.png" />
+    <Content Include="ckplayer\assets\images_Fashr_on.png" />
+    <Content Include="ckplayer\assets\images_Fashr_out.png" />
+    <Content Include="ckplayer\assets\images_Full_on.png" />
+    <Content Include="ckplayer\assets\images_Full_out.png" />
+    <Content Include="ckplayer\assets\images_General_on.png" />
+    <Content Include="ckplayer\assets\images_General_out.png" />
+    <Content Include="ckplayer\assets\images_Mute_on.png" />
+    <Content Include="ckplayer\assets\images_Mute_out.png" />
+    <Content Include="ckplayer\assets\images_Pause_on.png" />
+    <Content Include="ckplayer\assets\images_Pause_out.png" />
+    <Content Include="ckplayer\assets\images_Pause_Scgedyke.png" />
+    <Content Include="ckplayer\assets\images_Pause_Scgedyke_on.png" />
+    <Content Include="ckplayer\assets\images_Play_on.png" />
+    <Content Include="ckplayer\assets\images_Play_out.png" />
+    <Content Include="ckplayer\assets\images_Schedule.png" />
+    <Content Include="ckplayer\assets\images_Schedule_bg.png" />
+    <Content Include="ckplayer\assets\images_Schedule_load.png" />
+    <Content Include="ckplayer\assets\images_Schedule_play.png" />
+    <Content Include="ckplayer\assets\images_Sound_on.png" />
+    <Content Include="ckplayer\assets\images_Sound_out.png" />
+    <Content Include="ckplayer\assets\images_Volume_back.png" />
+    <Content Include="ckplayer\assets\images_Volume_Float.png" />
+    <Content Include="ckplayer\assets\images_Volume_on.png" />
+    <Content Include="ckplayer\assets\images_v_off.png" />
+    <Content Include="ckplayer\assets\images_v_on.png" />
+    <Content Include="ckplayer\assets\logo.swf" />
+    <Content Include="ckplayer\assets\mylogo.swf" />
+    <Content Include="ckplayer\assets\Preview.swf" />
+    <Content Include="ckplayer\assets\related.swf" />
+    <Content Include="ckplayer\assets\right.swf" />
+    <Content Include="ckplayer\assets\sch_lr.png" />
+    <Content Include="ckplayer\assets\share.swf" />
+    <Content Include="ckplayer\ckplayer.js" />
+    <Content Include="ckplayer\ckplayer.swf" />
+    <Content Include="ckplayer\ckplayer.txt" />
+    <Content Include="ckplayer\ckplayer.xml" />
+    <Content Include="ckplayer\expressInstall.swf" />
+    <Content Include="ckplayer\related.xml" />
+    <Content Include="ckplayer\share.xml" />
+    <Content Include="ckplayer\share\feixin.png" />
+    <Content Include="ckplayer\share\google.png" />
+    <Content Include="ckplayer\share\kaixin001.png" />
+    <Content Include="ckplayer\share\msn.png" />
+    <Content Include="ckplayer\share\qq.png" />
+    <Content Include="ckplayer\share\qq2.png" />
+    <Content Include="ckplayer\share\qzone.png" />
+    <Content Include="ckplayer\share\rr.png" />
+    <Content Include="ckplayer\share\sina.png" />
+    <Content Include="ckplayer\share\sohu.png" />
+    <Content Include="ckplayer\share\tianya.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="formedit.aspx" />
+    <Content Include="guest.aspx" />
+    <Content Include="guestedit.aspx" />
+    <Content Include="guestimages\0002.jpg" />
+    <Content Include="guestimages\003.png" />
+    <Content Include="guestimages\20071030155643370_2.gif" />
+    <Content Include="guestimages\20071030155643370_t2.gif" />
+    <Content Include="guestimages\2007122514643400_2.gif" />
+    <Content Include="guestimages\2008102185431113_2.gif" />
+    <Content Include="guestimages\arrow.gif" />
+    <Content Include="guestimages\arrow4.gif" />
+    <Content Include="guestimages\b-more.gif" />
+    <Content Include="guestimages\base.css" />
+    <Content Include="guestimages\bg1.jpg" />
+    <Content Include="guestimages\bg2.jpg" />
+    <Content Include="guestimages\bg3.jpg" />
+    <Content Include="guestimages\bg4.jpg" />
+    <Content Include="guestimages\bgs0.gif" />
+    <Content Include="guestimages\biabda.png" />
+    <Content Include="guestimages\bigyoubian.jpg" />
+    <Content Include="guestimages\bigzuobian.jpg" />
+    <Content Include="guestimages\fdsf.png" />
+    <Content Include="guestimages\gjyc.jpg" />
+    <Content Include="guestimages\guest2.css" />
+    <Content Include="guestimages\guestbook.jpg" />
+    <Content Include="guestimages\hout.png" />
+    <Content Include="guestimages\hover_menu_01.gif" />
+    <Content Include="guestimages\hover_menu_02.gif" />
+    <Content Include="guestimages\hover_menu_03.gif" />
+    <Content Include="guestimages\hover_menu_04.gif" />
+    <Content Include="guestimages\hover_menu_05.gif" />
+    <Content Include="guestimages\hover_menu_06.gif" />
+    <Content Include="guestimages\hover_menu_07.gif" />
+    <Content Include="guestimages\hover_menu_08.gif" />
+    <Content Include="guestimages\hover_menu_09.gif" />
+    <Content Include="guestimages\hover_menu_10.gif" />
+    <Content Include="guestimages\hover_menu_11.gif" />
+    <Content Include="guestimages\hover_menu_12.gif" />
+    <Content Include="guestimages\hr.png" />
+    <Content Include="guestimages\html5.js" />
+    <Content Include="guestimages\ico1.gif" />
+    <Content Include="guestimages\ico2.gif" />
+    <Content Include="guestimages\icon15.gif" />
+    <Content Include="guestimages\icon3.jpg" />
+    <Content Include="guestimages\icon61.gif" />
+    <Content Include="guestimages\jquery-1.5.min.js" />
+    <Content Include="guestimages\jquery-slider-theme.png" />
+    <Content Include="guestimages\jquery.min.js" />
+    <Content Include="guestimages\jquery.slider.css" />
+    <Content Include="guestimages\jquery.slider.ie6.css" />
+    <Content Include="guestimages\jquery.slider.min.js" />
+    <Content Include="guestimages\kj2.png" />
+    <Content Include="guestimages\line06.gif" />
+    <Content Include="guestimages\logo.gif" />
+    <Content Include="guestimages\m_menu_bg.gif" />
+    <Content Include="guestimages\new.png" />
+    <Content Include="guestimages\newsLeftUlimg.jpg" />
+    <Content Include="guestimages\out_menu_01.gif" />
+    <Content Include="guestimages\out_menu_02.gif" />
+    <Content Include="guestimages\out_menu_03.gif" />
+    <Content Include="guestimages\out_menu_05.gif" />
+    <Content Include="guestimages\out_menu_07.gif" />
+    <Content Include="guestimages\out_menu_09.gif" />
+    <Content Include="guestimages\out_menu_11.gif" />
+    <Content Include="guestimages\pict1.jpg" />
+    <Content Include="guestimages\pict2.jpg" />
+    <Content Include="guestimages\pict3.jpg" />
+    <Content Include="guestimages\preimg.js" />
+    <Content Include="guestimages\project.jpg" />
+    <Content Include="guestimages\QQfdsf.png" />
+    <Content Include="guestimages\QQfdsfs.png" />
+    <Content Include="guestimages\slider.js" />
+    <Content Include="guestimages\sreach.gif" />
+    <Content Include="guestimages\style.css" />
+    <Content Include="guestimages\sub.gif" />
+    <Content Include="guestimages\team.jpg" />
+    <Content Include="guestimages\waw.png" />
+    <Content Include="guestimages\weibo.png" />
+    <Content Include="guestimages\weizibg.jpg" />
+    <Content Include="guestimages\xinwen.jpg" />
+    <Content Include="guestimages\youjiao.png" />
+    <Content Include="guestimages\yun.png" />
+    <Content Include="guestimages\yz.png" />
+    <Content Include="guestimages\zuojiao.png" />
+    <Content Include="guestimages\_f1-d1-a.gif" />
+    <Content Include="guestimages\_f1-d1.gif" />
+    <Content Include="guestimages\_f1-d2-a.gif" />
+    <Content Include="guestimages\_f1-d2.gif" />
+    <Content Include="guestimages\_f1-d3-a.gif" />
+    <Content Include="guestimages\_f1-d3.gif" />
+    <Content Include="guestimages\_f1-d4-a.gif" />
+    <Content Include="guestimages\_f1-d4.gif" />
+    <Content Include="guestimages\_f1-d5-a.gif" />
+    <Content Include="guestimages\_f1-d5.gif" />
+    <Content Include="guestlist.aspx" />
+    <Content Include="kindeditor\examples\colorpicker.html" />
+    <Content Include="kindeditor\examples\custom-plugin.html" />
+    <Content Include="kindeditor\examples\custom-theme.html" />
+    <Content Include="kindeditor\examples\default.html" />
+    <Content Include="kindeditor\examples\dialog.html" />
+    <Content Include="kindeditor\examples\dynamic-load.html" />
+    <Content Include="kindeditor\examples\file-dialog.html" />
+    <Content Include="kindeditor\examples\file-manager.html" />
+    <Content Include="kindeditor\examples\filter-mode.html" />
+    <Content Include="kindeditor\examples\image-dialog.html" />
+    <Content Include="kindeditor\examples\index.css" />
+    <Content Include="kindeditor\examples\index.html" />
+    <Content Include="kindeditor\examples\jquery-ui.html" />
+    <Content Include="kindeditor\examples\jquery.html" />
+    <Content Include="kindeditor\examples\mootools.html" />
+    <Content Include="kindeditor\examples\multi-image-dialog.html" />
+    <Content Include="kindeditor\examples\multi-language.html" />
+    <Content Include="kindeditor\examples\newline.html" />
+    <Content Include="kindeditor\examples\node.html" />
+    <Content Include="kindeditor\examples\paste-type.html" />
+    <Content Include="kindeditor\examples\qqstyle.html" />
+    <Content Include="kindeditor\examples\readonly.html" />
+    <Content Include="kindeditor\examples\simple.html" />
+    <Content Include="kindeditor\examples\total.html" />
+    <Content Include="kindeditor\examples\uploadbutton.html" />
+    <Content Include="kindeditor\examples\url-type.html" />
+    <Content Include="kindeditor\examples\word-count.html" />
+    <Content Include="kindeditor\kindeditor-min.js" />
+    <Content Include="kindeditor\kindeditor.js" />
+    <Content Include="kindeditor\lang\ar.js" />
+    <Content Include="kindeditor\lang\en.js" />
+    <Content Include="kindeditor\lang\zh_CN.js" />
+    <Content Include="kindeditor\lang\zh_TW.js" />
+    <Content Include="kindeditor\license.txt" />
+    <Content Include="kindeditor\plugins\anchor\anchor.js" />
+    <Content Include="kindeditor\plugins\baidumap\baidumap.js" />
+    <Content Include="kindeditor\plugins\baidumap\map.html" />
+    <Content Include="kindeditor\plugins\clearhtml\clearhtml.js" />
+    <Content Include="kindeditor\plugins\code\code.js" />
+    <Content Include="kindeditor\plugins\code\prettify.css" />
+    <Content Include="kindeditor\plugins\code\prettify.js" />
+    <Content Include="kindeditor\plugins\emoticons\emoticons.js" />
+    <Content Include="kindeditor\plugins\emoticons\images\0.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\1.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\10.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\100.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\101.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\102.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\103.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\104.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\105.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\106.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\107.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\108.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\109.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\11.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\110.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\111.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\112.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\113.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\114.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\115.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\116.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\117.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\118.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\119.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\12.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\120.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\121.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\122.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\123.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\124.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\125.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\126.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\127.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\128.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\129.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\13.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\130.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\131.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\132.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\133.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\134.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\14.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\15.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\16.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\17.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\18.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\19.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\2.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\20.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\21.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\22.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\23.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\24.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\25.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\26.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\27.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\28.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\29.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\3.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\30.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\31.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\32.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\33.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\34.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\35.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\36.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\37.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\38.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\39.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\4.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\40.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\41.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\42.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\43.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\44.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\45.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\46.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\47.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\48.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\49.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\5.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\50.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\51.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\52.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\53.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\54.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\55.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\56.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\57.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\58.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\59.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\6.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\60.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\61.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\62.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\63.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\64.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\65.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\66.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\67.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\68.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\69.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\7.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\70.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\71.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\72.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\73.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\74.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\75.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\76.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\77.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\78.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\79.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\8.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\80.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\81.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\82.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\83.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\84.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\85.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\86.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\87.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\88.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\89.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\9.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\90.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\91.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\92.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\93.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\94.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\95.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\96.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\97.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\98.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\99.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\static.gif" />
+    <Content Include="kindeditor\plugins\filemanager\filemanager.js" />
+    <Content Include="kindeditor\plugins\filemanager\images\file-16.gif" />
+    <Content Include="kindeditor\plugins\filemanager\images\file-64.gif" />
+    <Content Include="kindeditor\plugins\filemanager\images\folder-16.gif" />
+    <Content Include="kindeditor\plugins\filemanager\images\folder-64.gif" />
+    <Content Include="kindeditor\plugins\filemanager\images\go-up.gif" />
+    <Content Include="kindeditor\plugins\flash\flash.js" />
+    <Content Include="kindeditor\plugins\image\image.js" />
+    <Content Include="kindeditor\plugins\image\images\align_left.gif" />
+    <Content Include="kindeditor\plugins\image\images\align_right.gif" />
+    <Content Include="kindeditor\plugins\image\images\align_top.gif" />
+    <Content Include="kindeditor\plugins\image\images\refresh.png" />
+    <Content Include="kindeditor\plugins\insertfile\insertfile.js" />
+    <Content Include="kindeditor\plugins\lineheight\lineheight.js" />
+    <Content Include="kindeditor\plugins\link\link.js" />
+    <Content Include="kindeditor\plugins\map\map.html" />
+    <Content Include="kindeditor\plugins\map\map.js" />
+    <Content Include="kindeditor\plugins\media\media.js" />
+    <Content Include="kindeditor\plugins\multiimage\images\image.png" />
+    <Content Include="kindeditor\plugins\multiimage\images\select-files-en.png" />
+    <Content Include="kindeditor\plugins\multiimage\images\select-files-zh_CN.png" />
+    <Content Include="kindeditor\plugins\multiimage\images\swfupload.swf" />
+    <Content Include="kindeditor\plugins\multiimage\multiimage.js" />
+    <Content Include="kindeditor\plugins\pagebreak\pagebreak.js" />
+    <Content Include="kindeditor\plugins\plainpaste\plainpaste.js" />
+    <Content Include="kindeditor\plugins\preview\preview.js" />
+    <Content Include="kindeditor\plugins\quickformat\quickformat.js" />
+    <Content Include="kindeditor\plugins\table\table.js" />
+    <Content Include="kindeditor\plugins\template\html\1.html" />
+    <Content Include="kindeditor\plugins\template\html\2.html" />
+    <Content Include="kindeditor\plugins\template\html\3.html" />
+    <Content Include="kindeditor\plugins\template\template.js" />
+    <Content Include="kindeditor\plugins\wordpaste\wordpaste.js" />
+    <Content Include="kindeditor\themes\common\anchor.gif" />
+    <Content Include="kindeditor\themes\common\blank.gif" />
+    <Content Include="kindeditor\themes\common\flash.gif" />
+    <Content Include="kindeditor\themes\common\loading.gif" />
+    <Content Include="kindeditor\themes\common\media.gif" />
+    <Content Include="kindeditor\themes\common\rm.gif" />
+    <Content Include="kindeditor\themes\default\background.png" />
+    <Content Include="kindeditor\themes\default\default.css" />
+    <Content Include="kindeditor\themes\default\default.png" />
+    <Content Include="kindeditor\themes\qq\editor.gif" />
+    <Content Include="kindeditor\themes\qq\qq.css" />
+    <Content Include="kindeditor\themes\simple\simple.css" />
+    <Content Include="lib\css\articleedit.css" />
+    <Content Include="lib\css\base.css" />
+    <Content Include="lib\css\jquery.slider.css" />
+    <Content Include="lib\css\jquery.slider.ie6.css" />
+    <Content Include="lib\css\rctg.css" />
+    <Content Include="lib\css\style.css" />
+    <Content Include="lib\images\login\checkcode.png" />
+    <Content Include="lib\images\login\rctg_03.png" />
+    <Content Include="lib\images\login\rctg_04.png" />
+    <Content Include="lib\images\login\rctg_07.png" />
+    <Content Include="lib\images\login\rctg_09.png" />
+    <Content Include="lib\images\login\rctg_12.png" />
+    <Content Include="lib\images\login\rctg_16.png" />
+    <Content Include="lib\images\noface.jpg" />
+    <Content Include="lib\images\progress\bg.png" />
+    <Content Include="lib\images\index\menuitem.gif" />
+    <Content Include="lib\images\index\navbar.gif" />
+    <Content Include="lib\images\index\sidebar.gif" />
+    <Content Include="lib\images\index\sidebarbottom.jpg" />
+    <Content Include="lib\images\index\sidebarselected.gif" />
+    <Content Include="lib\images\index\submenu.gif" />
+    <Content Include="lib\images\index\time.gif" />
+    <Content Include="lib\images\index\togglebtn.gif" />
+    <Content Include="lib\images\index\top.jpg" />
+    <Content Include="lib\images\index\topbg.gif" />
+    <Content Include="lib\images\index\topbg.jpg" />
+    <Content Include="lib\images\index\topicon.gif" />
+    <Content Include="lib\images\index\topmenu.gif" />
+    <Content Include="lib\images\index\triangle.gif" />
+    <Content Include="lib\images\index\triangle2.gif" />
+    <Content Include="lib\images\login\login-btn.gif" />
+    <Content Include="lib\images\login\logo.jpg" />
+    <Content Include="lib\images\login\panel-c.gif" />
+    <Content Include="lib\images\login\panel-f.gif" />
+    <Content Include="lib\images\login\panel-h.gif" />
+    <Content Include="lib\images\nopic.jpg" />
+    <Content Include="lib\images\progress\progressbar.gif" />
+    <Content Include="lib\images\progress\progressbg_green.gif" />
+    <Content Include="lib\images\progress\progressbg_orange.gif" />
+    <Content Include="lib\images\progress\progressbg_red.gif" />
+    <Content Include="lib\images\progress\progressbg_yellow.gif" />
+    <Content Include="lib\images\tab\tagleft.gif" />
+    <Content Include="lib\images\tab\tagright.gif" />
+    <Content Include="lib\images\water.png" />
+    <Content Include="lib\images\watercslg.png" />
+    <Content Include="lib\js\addfavorite.js" />
+    <Content Include="lib\js\changepassword.js" />
+    <Content Include="lib\js\common.js" />
+    <Content Include="lib\js\ga.js" />
+    <Content Include="lib\js\html5.js" />
+    <Content Include="lib\js\iconselector.js" />
+    <Content Include="lib\js\jquery-1.5.min.js" />
+    <Content Include="lib\js\jquery.chili-2.2.js" />
+    <Content Include="lib\js\jquery.js" />
+    <Content Include="lib\js\jquery.min.js" />
+    <Content Include="lib\js\jquery.progressbar.min.js" />
+    <Content Include="lib\js\jquery.slider.min.js" />
+    <Content Include="lib\js\LG.js" />
+    <Content Include="lib\js\LG2.js" />
+    <Content Include="lib\js\ligerui.expand.js" />
+    <Content Include="lib\js\login.js" />
+    <Content Include="lib\js\preimg.js" />
+    <Content Include="lib\js\slider.js" />
+    <Content Include="lib\js\validator.js" />
+    <Content Include="login.htm" />
+    <Content Include="member.aspx" />
+    <Content Include="progress.aspx" />
+    <Content Include="sites\Demo\pub\imgList.xml" />
+    <Content Include="sites\Demo\pub\index.html" />
+    <Content Include="sites\Demo\Templates\2012-12-26--131721.htm" />
+    <Content Include="sites\Demo\Templates\2012-12-26--131955.htm" />
+    <Content Include="sites\Demo\Templates\2012-12-26--133232.htm" />
+    <Content Include="sites\Demo\Templates\2012-12-26--14535.htm" />
+    <Content Include="sites\Demo\Templates\2012-12-26--145354.htm" />
+    <Content Include="sites\Demo\Templates\2012-12-26--151427.htm" />
+    <Content Include="sites\Demo\Templates\2012-12-26--185154.htm" />
+    <Content Include="sites\Demo\Templates\2012-12-26--20215.htm" />
+    <Content Include="sites\Demo\Templates\atts\css\base.css" />
+    <Content Include="sites\Demo\Templates\atts\css\jquery.slider.css" />
+    <Content Include="sites\Demo\Templates\atts\css\jquery.slider.ie6.css" />
+    <Content Include="sites\Demo\Templates\atts\css\style.css" />
+    <Content Include="sites\Demo\Templates\atts\images\0002.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\003.png" />
+    <Content Include="sites\Demo\Templates\atts\images\arrow.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\arrow4.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\b-more.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\bg1.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\bg2.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\bg3.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\bg4.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\bgs0.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\bigyoubian.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\bigzuobian.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\gjyc.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\hout.png" />
+    <Content Include="sites\Demo\Templates\atts\images\hover_menu_01.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\hover_menu_03.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\hover_menu_05.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\hover_menu_07.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\hover_menu_09.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\hover_menu_11.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\hr.png" />
+    <Content Include="sites\Demo\Templates\atts\images\icon15.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\icon61.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\jquery-slider-theme.png" />
+    <Content Include="sites\Demo\Templates\atts\images\kj2.png" />
+    <Content Include="sites\Demo\Templates\atts\images\line06.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\logo.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\new.png" />
+    <Content Include="sites\Demo\Templates\atts\images\newsLeftUlimg.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\out_menu_01.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\out_menu_02.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\out_menu_03.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\out_menu_05.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\out_menu_07.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\out_menu_09.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\out_menu_11.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\pict1.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\pict2.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\pict3.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\project.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\team.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\waw.png" />
+    <Content Include="sites\Demo\Templates\atts\images\weibo.png" />
+    <Content Include="sites\Demo\Templates\atts\images\weizibg.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\xinwen.jpg" />
+    <Content Include="sites\Demo\Templates\atts\images\youjiao.png" />
+    <Content Include="sites\Demo\Templates\atts\images\yun.png" />
+    <Content Include="sites\Demo\Templates\atts\images\zuojiao.png" />
+    <Content Include="sites\Demo\Templates\atts\images\_f1-d1-a.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\_f1-d1.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\_f1-d2-a.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\_f1-d2.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\_f1-d3-a.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\_f1-d3.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\_f1-d4-a.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\_f1-d4.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\_f1-d5-a.gif" />
+    <Content Include="sites\Demo\Templates\atts\images\_f1-d5.gif" />
+    <Content Include="sites\Demo\Templates\atts\js\html5.js" />
+    <Content Include="sites\Demo\Templates\atts\js\jquery-1.5.min.js" />
+    <Content Include="sites\Demo\Templates\atts\js\jquery.min.js" />
+    <Content Include="sites\Demo\Templates\atts\js\jquery.slider.min.js" />
+    <Content Include="sites\Demo\Templates\atts\js\preimg.js" />
+    <Content Include="sites\Demo\Templates\atts\js\slider.js" />
+    <Content Include="Web.config" />
+    <Content Include="水印测试.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajaxhandler\articleEditdo.aspx.cs">
+      <DependentUpon>articleEditdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\articleEditdo.aspx.designer.cs">
+      <DependentUpon>articleEditdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\articlemovedo.aspx.cs">
+      <DependentUpon>articlemovedo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\articlemovedo.aspx.designer.cs">
+      <DependentUpon>articlemovedo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\articlesort.aspx.cs">
+      <DependentUpon>articlesort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\articlesort.aspx.designer.cs">
+      <DependentUpon>articlesort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\catalogeditdo.aspx.cs">
+      <DependentUpon>catalogeditdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\catalogeditdo.aspx.designer.cs">
+      <DependentUpon>catalogeditdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\complex.aspx.cs">
+      <DependentUpon>complex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\complex.aspx.designer.cs">
+      <DependentUpon>complex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\departeditdo.aspx.cs">
+      <DependentUpon>departeditdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\departeditdo.aspx.designer.cs">
+      <DependentUpon>departeditdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\ftpeditdo.aspx.cs">
+      <DependentUpon>ftpeditdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\ftpeditdo.aspx.designer.cs">
+      <DependentUpon>ftpeditdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\Gethits.aspx.cs">
+      <DependentUpon>Gethits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\Gethits.aspx.designer.cs">
+      <DependentUpon>Gethits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\guestdo.aspx.cs">
+      <DependentUpon>guestdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\guestdo.aspx.designer.cs">
+      <DependentUpon>guestdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loadarticlelist.aspx.cs">
+      <DependentUpon>loadarticlelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loadarticlelist.aspx.designer.cs">
+      <DependentUpon>loadarticlelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\ajax.aspx.designer.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loadcataloglist.aspx.cs">
+      <DependentUpon>loadcataloglist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loadcataloglist.aspx.designer.cs">
+      <DependentUpon>loadcataloglist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loadcatalogtree.aspx.cs">
+      <DependentUpon>loadcatalogtree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loadcatalogtree.aspx.designer.cs">
+      <DependentUpon>loadcatalogtree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loaddepartlist.aspx.cs">
+      <DependentUpon>loaddepartlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loaddepartlist.aspx.designer.cs">
+      <DependentUpon>loaddepartlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loadguestlist.aspx.cs">
+      <DependentUpon>loadguestlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loadguestlist.aspx.designer.cs">
+      <DependentUpon>loadguestlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loadloglist.aspx.cs">
+      <DependentUpon>loadloglist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loadloglist.aspx.designer.cs">
+      <DependentUpon>loadloglist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loadmessagelist.aspx.cs">
+      <DependentUpon>loadmessagelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loadmessagelist.aspx.designer.cs">
+      <DependentUpon>loadmessagelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loadright.aspx.cs">
+      <DependentUpon>loadright.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loadright.aspx.designer.cs">
+      <DependentUpon>loadright.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loadrolelist.aspx.cs">
+      <DependentUpon>loadrolelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loadrolelist.aspx.designer.cs">
+      <DependentUpon>loadrolelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loadsitelist.aspx.cs">
+      <DependentUpon>loadsitelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loadsitelist.aspx.designer.cs">
+      <DependentUpon>loadsitelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loadtemplatelist.aspx.cs">
+      <DependentUpon>loadtemplatelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loadtemplatelist.aspx.designer.cs">
+      <DependentUpon>loadtemplatelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\loaduserlist.aspx.cs">
+      <DependentUpon>loaduserlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\loaduserlist.aspx.designer.cs">
+      <DependentUpon>loaduserlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\messageeditdo.aspx.cs">
+      <DependentUpon>messageeditdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\messageeditdo.aspx.designer.cs">
+      <DependentUpon>messageeditdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\personinfodo.aspx.cs">
+      <DependentUpon>personinfodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\personinfodo.aspx.designer.cs">
+      <DependentUpon>personinfodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\produceyanz.aspx.cs">
+      <DependentUpon>produceyanz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\produceyanz.aspx.designer.cs">
+      <DependentUpon>produceyanz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\publishajax.aspx.cs">
+      <DependentUpon>publishajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\publishajax.aspx.designer.cs">
+      <DependentUpon>publishajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\roleeditdo.aspx.cs">
+      <DependentUpon>roleeditdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\roleeditdo.aspx.designer.cs">
+      <DependentUpon>roleeditdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\select.aspx.cs">
+      <DependentUpon>select.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\select.aspx.designer.cs">
+      <DependentUpon>select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\siteeditdo.aspx.cs">
+      <DependentUpon>siteeditdo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\siteeditdo.aspx.designer.cs">
+      <DependentUpon>siteeditdo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxhandler\templatedo.aspx.cs">
+      <DependentUpon>templatedo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxhandler\templatedo.aspx.designer.cs">
+      <DependentUpon>templatedo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="articleEidt.aspx.cs">
+      <DependentUpon>articleEidt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="articleEidt.aspx.designer.cs">
+      <DependentUpon>articleEidt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleList.aspx.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticleList.aspx.designer.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="catalogedit.aspx.cs">
+      <DependentUpon>catalogedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogedit.aspx.designer.cs">
+      <DependentUpon>catalogedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formedit.aspx.cs">
+      <DependentUpon>formedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formedit.aspx.designer.cs">
+      <DependentUpon>formedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="guest.aspx.cs">
+      <DependentUpon>guest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="guest.aspx.designer.cs">
+      <DependentUpon>guest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="guestedit.aspx.cs">
+      <DependentUpon>guestedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="guestedit.aspx.designer.cs">
+      <DependentUpon>guestedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="guestlist.aspx.cs">
+      <DependentUpon>guestlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="guestlist.aspx.designer.cs">
+      <DependentUpon>guestlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loadbasedate.aspx.cs">
+      <DependentUpon>loadbasedate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loadbasedate.aspx.designer.cs">
+      <DependentUpon>loadbasedate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="member.aspx.cs">
+      <DependentUpon>member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="member.aspx.designer.cs">
+      <DependentUpon>member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="movecatalog.aspx.cs">
+      <DependentUpon>movecatalog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="movecatalog.aspx.designer.cs">
+      <DependentUpon>movecatalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="departedit.aspx.cs">
+      <DependentUpon>departedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="departedit.aspx.designer.cs">
+      <DependentUpon>departedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="departlist.aspx.cs">
+      <DependentUpon>departlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="departlist.aspx.designer.cs">
+      <DependentUpon>departlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ftpedit.aspx.cs">
+      <DependentUpon>ftpedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ftpedit.aspx.designer.cs">
+      <DependentUpon>ftpedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loglist.aspx.cs">
+      <DependentUpon>loglist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loglist.aspx.designer.cs">
+      <DependentUpon>loglist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="messageedit.aspx.cs">
+      <DependentUpon>messageedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="messageedit.aspx.designer.cs">
+      <DependentUpon>messageedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="messagelist.aspx.cs">
+      <DependentUpon>messagelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="messagelist.aspx.designer.cs">
+      <DependentUpon>messagelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="personinfo.aspx.cs">
+      <DependentUpon>personinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="personinfo.aspx.designer.cs">
+      <DependentUpon>personinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="progress.aspx.cs">
+      <DependentUpon>progress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="progress.aspx.designer.cs">
+      <DependentUpon>progress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="roleedit.aspx.cs">
+      <DependentUpon>roleedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="roleedit.aspx.designer.cs">
+      <DependentUpon>roleedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rolelist.aspx.cs">
+      <DependentUpon>rolelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rolelist.aspx.designer.cs">
+      <DependentUpon>rolelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="siteedit.aspx.cs">
+      <DependentUpon>siteedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteedit.aspx.designer.cs">
+      <DependentUpon>siteedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitelist.aspx.cs">
+      <DependentUpon>sitelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sitelist.aspx.designer.cs">
+      <DependentUpon>sitelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templateEdit.aspx.cs">
+      <DependentUpon>templateEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templateEdit.aspx.designer.cs">
+      <DependentUpon>templateEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templatelist.aspx.cs">
+      <DependentUpon>templatelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templatelist.aspx.designer.cs">
+      <DependentUpon>templatelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tongji.aspx.cs">
+      <DependentUpon>tongji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tongji.aspx.designer.cs">
+      <DependentUpon>tongji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userlist.aspx.cs">
+      <DependentUpon>userlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userlist.aspx.designer.cs">
+      <DependentUpon>userlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.aspx.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welcome.aspx.designer.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="水印测试.aspx.cs">
+      <DependentUpon>水印测试.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="水印测试.aspx.designer.cs">
+      <DependentUpon>水印测试.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\LitJSON.dll" />
+    <Content Include="bin\SiteGroupCms.dll" />
+    <Content Include="bin\SiteGroupCms.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kindeditor\file_manager_json.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="attached\image\20120809\20120809105703_7024.jpg" />
+    <Content Include="attached\image\20120809\20120809105727_0818.jpg" />
+    <Content Include="attached\image\20120809\20120809105727_1398.jpg" />
+    <Content Include="attached\image\20120809\20120809110741_7159.jpg" />
+    <Content Include="config\treedata.js" />
+    <Content Include="kindeditor\upload_json.ashx" />
+    <Content Include="lib\css\common.css" />
+    <Content Include="lib\css\index.css" />
+    <Content Include="lib\css\welcome.css" />
+    <Content Include="lib\icons\32X32\address.gif" />
+    <Content Include="lib\icons\32X32\administrative_docs.gif" />
+    <Content Include="lib\icons\32X32\advertising.gif" />
+    <Content Include="lib\icons\32X32\archives.gif" />
+    <Content Include="lib\icons\32X32\attibutes.gif" />
+    <Content Include="lib\icons\32X32\bank.gif" />
+    <Content Include="lib\icons\32X32\basket.gif" />
+    <Content Include="lib\icons\32X32\bestseller.gif" />
+    <Content Include="lib\icons\32X32\billing.gif" />
+    <Content Include="lib\icons\32X32\book.gif" />
+    <Content Include="lib\icons\32X32\book2.gif" />
+    <Content Include="lib\icons\32X32\bookmark.gif" />
+    <Content Include="lib\icons\32X32\brainstorming.gif" />
+    <Content Include="lib\icons\32X32\business_contact.gif" />
+    <Content Include="lib\icons\32X32\busy.gif" />
+    <Content Include="lib\icons\32X32\calendar.gif" />
+    <Content Include="lib\icons\32X32\category.gif" />
+    <Content Include="lib\icons\32X32\check.gif" />
+    <Content Include="lib\icons\32X32\clock.gif" />
+    <Content Include="lib\icons\32X32\collaboration.gif" />
+    <Content Include="lib\icons\32X32\comment.gif" />
+    <Content Include="lib\icons\32X32\communication.gif" />
+    <Content Include="lib\icons\32X32\config.gif" />
+    <Content Include="lib\icons\32X32\consulting.gif" />
+    <Content Include="lib\icons\32X32\contact.gif" />
+    <Content Include="lib\icons\32X32\cost.gif" />
+    <Content Include="lib\icons\32X32\credit.gif" />
+    <Content Include="lib\icons\32X32\credit_card.gif" />
+    <Content Include="lib\icons\32X32\current_work.gif" />
+    <Content Include="lib\icons\32X32\customers.gif" />
+    <Content Include="lib\icons\32X32\cv.gif" />
+    <Content Include="lib\icons\32X32\database.gif" />
+    <Content Include="lib\icons\32X32\date.gif" />
+    <Content Include="lib\icons\32X32\delicious %282%29.gif" />
+    <Content Include="lib\icons\32X32\document_library.gif" />
+    <Content Include="lib\icons\32X32\donate.gif" />
+    <Content Include="lib\icons\32X32\drawings.gif" />
+    <Content Include="lib\icons\32X32\edit.gif" />
+    <Content Include="lib\icons\32X32\email.gif" />
+    <Content Include="lib\icons\32X32\featured.gif" />
+    <Content Include="lib\icons\32X32\feed%281%29.gif" />
+    <Content Include="lib\icons\32X32\feed.gif" />
+    <Content Include="lib\icons\32X32\finished_work.gif" />
+    <Content Include="lib\icons\32X32\flag.gif" />
+    <Content Include="lib\icons\32X32\folder.gif" />
+    <Content Include="lib\icons\32X32\freelance.gif" />
+    <Content Include="lib\icons\32X32\free_for_job.gif" />
+    <Content Include="lib\icons\32X32\full_time.gif" />
+    <Content Include="lib\icons\32X32\future_projects.gif" />
+    <Content Include="lib\icons\32X32\graphic_design.gif" />
+    <Content Include="lib\icons\32X32\heart.gif" />
+    <Content Include="lib\icons\32X32\hire_me.gif" />
+    <Content Include="lib\icons\32X32\home.gif" />
+    <Content Include="lib\icons\32X32\illustration.gif" />
+    <Content Include="lib\icons\32X32\import.png" />
+    <Content Include="lib\icons\32X32\information.gif" />
+    <Content Include="lib\icons\32X32\invoice.gif" />
+    <Content Include="lib\icons\32X32\issue.gif" />
+    <Content Include="lib\icons\32X32\lightbulb.gif" />
+    <Content Include="lib\icons\32X32\limited_edition.gif" />
+    <Content Include="lib\icons\32X32\link.gif" />
+    <Content Include="lib\icons\32X32\lock.gif" />
+    <Content Include="lib\icons\32X32\login.gif" />
+    <Content Include="lib\icons\32X32\logout.gif" />
+    <Content Include="lib\icons\32X32\member.gif" />
+    <Content Include="lib\icons\32X32\milestone.gif" />
+    <Content Include="lib\icons\32X32\my_account.gif" />
+    <Content Include="lib\icons\32X32\networking.gif" />
+    <Content Include="lib\icons\32X32\order.gif" />
+    <Content Include="lib\icons\32X32\order_159.gif" />
+    <Content Include="lib\icons\32X32\order_192.gif" />
+    <Content Include="lib\icons\32X32\payment_card.gif" />
+    <Content Include="lib\icons\32X32\paypal.gif" />
+    <Content Include="lib\icons\32X32\pen.gif" />
+    <Content Include="lib\icons\32X32\pencil.gif" />
+    <Content Include="lib\icons\32X32\phone.gif" />
+    <Content Include="lib\icons\32X32\photography.gif" />
+    <Content Include="lib\icons\32X32\plus.gif" />
+    <Content Include="lib\icons\32X32\premium.gif" />
+    <Content Include="lib\icons\32X32\print.gif" />
+    <Content Include="lib\icons\32X32\process.gif" />
+    <Content Include="lib\icons\32X32\product.gif" />
+    <Content Include="lib\icons\32X32\product_169.gif" />
+    <Content Include="lib\icons\32X32\product_193.gif" />
+    <Content Include="lib\icons\32X32\product_design.gif" />
+    <Content Include="lib\icons\32X32\project.gif" />
+    <Content Include="lib\icons\32X32\publish.gif" />
+    <Content Include="lib\icons\32X32\refresh.gif" />
+    <Content Include="lib\icons\32X32\report.gif" />
+    <Content Include="lib\icons\32X32\role.gif" />
+    <Content Include="lib\icons\32X32\search.gif" />
+    <Content Include="lib\icons\32X32\searchtool.gif" />
+    <Content Include="lib\icons\32X32\settings.gif" />
+    <Content Include="lib\icons\32X32\setup.gif" />
+    <Content Include="lib\icons\32X32\shipping.gif" />
+    <Content Include="lib\icons\32X32\showreel.gif" />
+    <Content Include="lib\icons\32X32\sign_in.gif" />
+    <Content Include="lib\icons\32X32\sign_out.gif" />
+    <Content Include="lib\icons\32X32\sign_up.gif" />
+    <Content Include="lib\icons\32X32\sitemap.gif" />
+    <Content Include="lib\icons\32X32\special_offer.gif" />
+    <Content Include="lib\icons\32X32\star.gif" />
+    <Content Include="lib\icons\32X32\statistics.gif" />
+    <Content Include="lib\icons\32X32\suppliers.gif" />
+    <Content Include="lib\icons\32X32\tag.gif" />
+    <Content Include="lib\icons\32X32\ticket.gif" />
+    <Content Include="lib\icons\32X32\Time Machine.gif" />
+    <Content Include="lib\icons\32X32\total.gif" />
+    <Content Include="lib\icons\32X32\twitter%281%29.gif" />
+    <Content Include="lib\icons\32X32\upcoming_work.gif" />
+    <Content Include="lib\icons\32X32\user.gif" />
+    <Content Include="lib\icons\32X32\world.gif" />
+    <Content Include="lib\icons\32X32\zoom.gif" />
+    <Content Include="lib\icons\function_icon_set\0_Readme_First.txt" />
+    <Content Include="lib\icons\function_icon_set\accepted_48.png" />
+    <Content Include="lib\icons\function_icon_set\add_16.png" />
+    <Content Include="lib\icons\function_icon_set\add_48.png" />
+    <Content Include="lib\icons\function_icon_set\app_48.png" />
+    <Content Include="lib\icons\function_icon_set\arrow_down_48.png" />
+    <Content Include="lib\icons\function_icon_set\arrow_down_green_48.png" />
+    <Content Include="lib\icons\function_icon_set\arrow_left_48.png" />
+    <Content Include="lib\icons\function_icon_set\arrow_left_green_48.png" />
+    <Content Include="lib\icons\function_icon_set\arrow_right_48.png" />
+    <Content Include="lib\icons\function_icon_set\arrow_right_green_48.png" />
+    <Content Include="lib\icons\function_icon_set\arrow_up_48.png" />
+    <Content Include="lib\icons\function_icon_set\arrow_up_green_48.png" />
+    <Content Include="lib\icons\function_icon_set\beer_48.png" />
+    <Content Include="lib\icons\function_icon_set\blinklist_48.png" />
+    <Content Include="lib\icons\function_icon_set\blue_speech_bubble_48.png" />
+    <Content Include="lib\icons\function_icon_set\book_48.png" />
+    <Content Include="lib\icons\function_icon_set\box_48.png" />
+    <Content Include="lib\icons\function_icon_set\box_download_48.png" />
+    <Content Include="lib\icons\function_icon_set\box_upload_48.png" />
+    <Content Include="lib\icons\function_icon_set\camera_48.png" />
+    <Content Include="lib\icons\function_icon_set\camera_add_48.png" />
+    <Content Include="lib\icons\function_icon_set\camera_delete_48.png" />
+    <Content Include="lib\icons\function_icon_set\camera_noflash_48.png" />
+    <Content Include="lib\icons\function_icon_set\camera_noflash_add_48.png" />
+    <Content Include="lib\icons\function_icon_set\camera_noflash_delete_48.png" />
+    <Content Include="lib\icons\function_icon_set\camera_noflash_warning_48.png" />
+    <Content Include="lib\icons\function_icon_set\camera_warning_48.png" />
+    <Content Include="lib\icons\function_icon_set\cancel_16.png" />
+    <Content Include="lib\icons\function_icon_set\cancel_48.png" />
+    <Content Include="lib\icons\function_icon_set\cd_48.png" />
+    <Content Include="lib\icons\function_icon_set\circle_blue.png" />
+    <Content Include="lib\icons\function_icon_set\circle_green.png" />
+    <Content Include="lib\icons\function_icon_set\circle_orange.png" />
+    <Content Include="lib\icons\function_icon_set\circle_red.png" />
+    <Content Include="lib\icons\function_icon_set\clock_48.png" />
+    <Content Include="lib\icons\function_icon_set\coffee_48.png" />
+    <Content Include="lib\icons\function_icon_set\coffee_mug.png" />
+    <Content Include="lib\icons\function_icon_set\comment_48.png" />
+    <Content Include="lib\icons\function_icon_set\comment_add_48.png" />
+    <Content Include="lib\icons\function_icon_set\comment_remove_48.png" />
+    <Content Include="lib\icons\function_icon_set\comment_warning_48.png" />
+    <Content Include="lib\icons\function_icon_set\computer_48.png" />
+    <Content Include="lib\icons\function_icon_set\creditcard_american_express.png" />
+    <Content Include="lib\icons\function_icon_set\creditcard_cirrus.png" />
+    <Content Include="lib\icons\function_icon_set\creditcard_mastercard.png" />
+    <Content Include="lib\icons\function_icon_set\creditcard_paypal.png" />
+    <Content Include="lib\icons\function_icon_set\creditcard_solo.png" />
+    <Content Include="lib\icons\function_icon_set\creditcard_switch.png" />
+    <Content Include="lib\icons\function_icon_set\creditcard_visa.png" />
+    <Content Include="lib\icons\function_icon_set\cross_48.png" />
+    <Content Include="lib\icons\function_icon_set\database_48.png" />
+    <Content Include="lib\icons\function_icon_set\database_add_48.png" />
+    <Content Include="lib\icons\function_icon_set\database_remove_48.png" />
+    <Content Include="lib\icons\function_icon_set\database_warning_48.png" />
+    <Content Include="lib\icons\function_icon_set\delicious_48.png" />
+    <Content Include="lib\icons\function_icon_set\designfloat_48.png" />
+    <Content Include="lib\icons\function_icon_set\digg_48.png" />
+    <Content Include="lib\icons\function_icon_set\feedburner_48.png" />
+    <Content Include="lib\icons\function_icon_set\flickr_48.png" />
+    <Content Include="lib\icons\function_icon_set\floppy_disk_48.png" />
+    <Content Include="lib\icons\function_icon_set\folder_48.png" />
+    <Content Include="lib\icons\function_icon_set\folder_add_48.png" />
+    <Content Include="lib\icons\function_icon_set\folder_delete_48.png" />
+    <Content Include="lib\icons\function_icon_set\folder_warning_48.png" />
+    <Content Include="lib\icons\function_icon_set\furl_48.png" />
+    <Content Include="lib\icons\function_icon_set\globe_48.png" />
+    <Content Include="lib\icons\function_icon_set\google_48.png" />
+    <Content Include="lib\icons\function_icon_set\heart_48.png" />
+    <Content Include="lib\icons\function_icon_set\home_48.png" />
+    <Content Include="lib\icons\function_icon_set\image_48.png" />
+    <Content Include="lib\icons\function_icon_set\image_add_48.png" />
+    <Content Include="lib\icons\function_icon_set\image_delete_48.png" />
+    <Content Include="lib\icons\function_icon_set\image_warning_48.png" />
+    <Content Include="lib\icons\function_icon_set\lightbulb_48.png" />
+    <Content Include="lib\icons\function_icon_set\lock_48.png" />
+    <Content Include="lib\icons\function_icon_set\lock_open_48.png" />
+    <Content Include="lib\icons\function_icon_set\mail_48.png" />
+    <Content Include="lib\icons\function_icon_set\mail_add_48.png" />
+    <Content Include="lib\icons\function_icon_set\mail_delete_48.png" />
+    <Content Include="lib\icons\function_icon_set\mail_forward_48.png" />
+    <Content Include="lib\icons\function_icon_set\mail_reply_48.png" />
+    <Content Include="lib\icons\function_icon_set\mail_spam_48.png" />
+    <Content Include="lib\icons\function_icon_set\mail_write_48.png" />
+    <Content Include="lib\icons\function_icon_set\mixx_48.png" />
+    <Content Include="lib\icons\function_icon_set\mouse_48.png" />
+    <Content Include="lib\icons\function_icon_set\navigate_48.png" />
+    <Content Include="lib\icons\function_icon_set\newspaper_48.png" />
+    <Content Include="lib\icons\function_icon_set\paper&amp;pencil_48.png" />
+    <Content Include="lib\icons\function_icon_set\paper_48.png" />
+    <Content Include="lib\icons\function_icon_set\paper_content_48.png" />
+    <Content Include="lib\icons\function_icon_set\paper_content_chart_48.png" />
+    <Content Include="lib\icons\function_icon_set\paper_content_pencil_48.png" />
+    <Content Include="lib\icons\function_icon_set\pencil_48.png" />
+    <Content Include="lib\icons\function_icon_set\pie_chart_48.png" />
+    <Content Include="lib\icons\function_icon_set\printer_48.png" />
+    <Content Include="lib\icons\function_icon_set\questionmark_48.png" />
+    <Content Include="lib\icons\function_icon_set\reddit_48.png" />
+    <Content Include="lib\icons\function_icon_set\refresh_48.png" />
+    <Content Include="lib\icons\function_icon_set\rss_48.png" />
+    <Content Include="lib\icons\function_icon_set\search_48.png" />
+    <Content Include="lib\icons\function_icon_set\smile_grin_48.png" />
+    <Content Include="lib\icons\function_icon_set\smile_sad_48.png" />
+    <Content Include="lib\icons\function_icon_set\spanner_48.png" />
+    <Content Include="lib\icons\function_icon_set\speech_bubble_48.png" />
+    <Content Include="lib\icons\function_icon_set\star_48.png" />
+    <Content Include="lib\icons\function_icon_set\star_half_48.png" />
+    <Content Include="lib\icons\function_icon_set\star_off_48.png" />
+    <Content Include="lib\icons\function_icon_set\sumbleupon_48.png" />
+    <Content Include="lib\icons\function_icon_set\table_48.png" />
+    <Content Include="lib\icons\function_icon_set\table_green_48.png" />
+    <Content Include="lib\icons\function_icon_set\tabs_48.png" />
+    <Content Include="lib\icons\function_icon_set\technorati_48.png" />
+    <Content Include="lib\icons\function_icon_set\thumbs_down_48.png" />
+    <Content Include="lib\icons\function_icon_set\thumbs_up_48.png" />
+    <Content Include="lib\icons\function_icon_set\twitter_48.png" />
+    <Content Include="lib\icons\function_icon_set\twitter_boxed_48.png" />
+    <Content Include="lib\icons\function_icon_set\usb_48.png" />
+    <Content Include="lib\icons\function_icon_set\users_two_48.png" />
+    <Content Include="lib\icons\function_icon_set\users_two_add_48.png" />
+    <Content Include="lib\icons\function_icon_set\users_two_warning_48.png" />
+    <Content Include="lib\icons\function_icon_set\user_48.png" />
+    <Content Include="lib\icons\function_icon_set\user_add_48.png" />
+    <Content Include="lib\icons\function_icon_set\user_delete_48.png" />
+    <Content Include="lib\icons\function_icon_set\user_two_delete_48.png" />
+    <Content Include="lib\icons\function_icon_set\user_warning_48.png" />
+    <Content Include="lib\icons\function_icon_set\warning_16.png" />
+    <Content Include="lib\icons\function_icon_set\warning_48.png" />
+    <Content Include="lib\icons\function_icon_set\yahoo_48.png" />
+    <Content Include="lib\icons\miniicons\action_back.gif" />
+    <Content Include="lib\icons\miniicons\action_forward.gif" />
+    <Content Include="lib\icons\miniicons\action_go.gif" />
+    <Content Include="lib\icons\miniicons\action_paste.gif" />
+    <Content Include="lib\icons\miniicons\action_print.gif" />
+    <Content Include="lib\icons\miniicons\action_refresh.gif" />
+    <Content Include="lib\icons\miniicons\action_refresh_blue.gif" />
+    <Content Include="lib\icons\miniicons\action_save.gif" />
+    <Content Include="lib\icons\miniicons\action_stop.gif" />
+    <Content Include="lib\icons\miniicons\application_dreamweaver.gif" />
+    <Content Include="lib\icons\miniicons\application_firefox.gif" />
+    <Content Include="lib\icons\miniicons\application_flash.gif" />
+    <Content Include="lib\icons\miniicons\arrow_down.gif" />
+    <Content Include="lib\icons\miniicons\arrow_left.gif" />
+    <Content Include="lib\icons\miniicons\arrow_right.gif" />
+    <Content Include="lib\icons\miniicons\arrow_up.gif" />
+    <Content Include="lib\icons\miniicons\box.gif" />
+    <Content Include="lib\icons\miniicons\calendar.gif" />
+    <Content Include="lib\icons\miniicons\comment.gif" />
+    <Content Include="lib\icons\miniicons\comment_blue.gif" />
+    <Content Include="lib\icons\miniicons\comment_delete.gif" />
+    <Content Include="lib\icons\miniicons\comment_new.gif" />
+    <Content Include="lib\icons\miniicons\comment_yellow.gif" />
+    <Content Include="lib\icons\miniicons\copy.gif" />
+    <Content Include="lib\icons\miniicons\cut.gif" />
+    <Content Include="lib\icons\miniicons\date.gif" />
+    <Content Include="lib\icons\miniicons\date_delete.gif" />
+    <Content Include="lib\icons\miniicons\date_new.gif" />
+    <Content Include="lib\icons\miniicons\file_acrobat.gif" />
+    <Content Include="lib\icons\miniicons\file_font.gif" />
+    <Content Include="lib\icons\miniicons\file_font_truetype.gif" />
+    <Content Include="lib\icons\miniicons\flag_blue.gif" />
+    <Content Include="lib\icons\miniicons\flag_green.gif" />
+    <Content Include="lib\icons\miniicons\flag_orange.gif" />
+    <Content Include="lib\icons\miniicons\flag_red.gif" />
+    <Content Include="lib\icons\miniicons\flag_white.gif" />
+    <Content Include="lib\icons\miniicons\folder.gif" />
+    <Content Include="lib\icons\miniicons\folder_delete.gif" />
+    <Content Include="lib\icons\miniicons\folder_images.gif" />
+    <Content Include="lib\icons\miniicons\folder_lock.gif" />
+    <Content Include="lib\icons\miniicons\folder_new.gif" />
+    <Content Include="lib\icons\miniicons\folder_page.gif" />
+    <Content Include="lib\icons\miniicons\icon_accept.gif" />
+    <Content Include="lib\icons\miniicons\icon_airmail.gif" />
+    <Content Include="lib\icons\miniicons\icon_alert.gif" />
+    <Content Include="lib\icons\miniicons\icon_attachment.gif" />
+    <Content Include="lib\icons\miniicons\icon_clock.gif" />
+    <Content Include="lib\icons\miniicons\icon_component.gif" />
+    <Content Include="lib\icons\miniicons\icon_download.gif" />
+    <Content Include="lib\icons\miniicons\icon_email.gif" />
+    <Content Include="lib\icons\miniicons\icon_extension.gif" />
+    <Content Include="lib\icons\miniicons\icon_favourites.gif" />
+    <Content Include="lib\icons\miniicons\icon_get_world.gif" />
+    <Content Include="lib\icons\miniicons\icon_history.gif" />
+    <Content Include="lib\icons\miniicons\icon_home.gif" />
+    <Content Include="lib\icons\miniicons\icon_info.gif" />
+    <Content Include="lib\icons\miniicons\icon_key.gif" />
+    <Content Include="lib\icons\miniicons\icon_link.gif" />
+    <Content Include="lib\icons\miniicons\icon_mail.gif" />
+    <Content Include="lib\icons\miniicons\icon_monitor_mac.gif" />
+    <Content Include="lib\icons\miniicons\icon_monitor_pc.gif" />
+    <Content Include="lib\icons\miniicons\icon_network.gif" />
+    <Content Include="lib\icons\miniicons\icon_package.gif" />
+    <Content Include="lib\icons\miniicons\icon_package_get.gif" />
+    <Content Include="lib\icons\miniicons\icon_package_open.gif" />
+    <Content Include="lib\icons\miniicons\icon_padlock.gif" />
+    <Content Include="lib\icons\miniicons\icon_security.gif" />
+    <Content Include="lib\icons\miniicons\icon_settings.gif" />
+    <Content Include="lib\icons\miniicons\icon_user.gif" />
+    <Content Include="lib\icons\miniicons\icon_wand.gif" />
+    <Content Include="lib\icons\miniicons\icon_world.gif" />
+    <Content Include="lib\icons\miniicons\icon_world_dynamic.gif" />
+    <Content Include="lib\icons\miniicons\image.gif" />
+    <Content Include="lib\icons\miniicons\image_new.gif" />
+    <Content Include="lib\icons\miniicons\interface_browser.gif" />
+    <Content Include="lib\icons\miniicons\interface_dialog.gif" />
+    <Content Include="lib\icons\miniicons\interface_installer.gif" />
+    <Content Include="lib\icons\miniicons\list_comments.gif" />
+    <Content Include="lib\icons\miniicons\list_components.gif" />
+    <Content Include="lib\icons\miniicons\list_errors.gif" />
+    <Content Include="lib\icons\miniicons\list_extensions.gif" />
+    <Content Include="lib\icons\miniicons\list_images.gif" />
+    <Content Include="lib\icons\miniicons\list_keys.gif" />
+    <Content Include="lib\icons\miniicons\list_links.gif" />
+    <Content Include="lib\icons\miniicons\list_packages.gif" />
+    <Content Include="lib\icons\miniicons\list_security.gif" />
+    <Content Include="lib\icons\miniicons\list_settings.gif" />
+    <Content Include="lib\icons\miniicons\list_users.gif" />
+    <Content Include="lib\icons\miniicons\list_world.gif" />
+    <Content Include="lib\icons\miniicons\note.gif" />
+    <Content Include="lib\icons\miniicons\note_delete.gif" />
+    <Content Include="lib\icons\miniicons\note_new.gif" />
+    <Content Include="lib\icons\miniicons\page.gif" />
+    <Content Include="lib\icons\miniicons\page_alert.gif" />
+    <Content Include="lib\icons\miniicons\page_attachment.gif" />
+    <Content Include="lib\icons\miniicons\page_bookmark.gif" />
+    <Content Include="lib\icons\miniicons\page_boy.gif" />
+    <Content Include="lib\icons\miniicons\page_code.gif" />
+    <Content Include="lib\icons\miniicons\page_colors.gif" />
+    <Content Include="lib\icons\miniicons\page_component.gif" />
+    <Content Include="lib\icons\miniicons\page_cross.gif" />
+    <Content Include="lib\icons\miniicons\page_delete.gif" />
+    <Content Include="lib\icons\miniicons\page_deny.gif" />
+    <Content Include="lib\icons\miniicons\page_down.gif" />
+    <Content Include="lib\icons\miniicons\page_dynamic.gif" />
+    <Content Include="lib\icons\miniicons\page_edit.gif" />
+    <Content Include="lib\icons\miniicons\page_extension.gif" />
+    <Content Include="lib\icons\miniicons\page_favourites.gif" />
+    <Content Include="lib\icons\miniicons\page_find.gif" />
+    <Content Include="lib\icons\miniicons\page_flash.gif" />
+    <Content Include="lib\icons\miniicons\page_girl.gif" />
+    <Content Include="lib\icons\miniicons\page_html.gif" />
+    <Content Include="lib\icons\miniicons\page_java.gif" />
+    <Content Include="lib\icons\miniicons\page_key.gif" />
+    <Content Include="lib\icons\miniicons\page_left.gif" />
+    <Content Include="lib\icons\miniicons\page_link.gif" />
+    <Content Include="lib\icons\miniicons\page_lock.gif" />
+    <Content Include="lib\icons\miniicons\page_new.gif" />
+    <Content Include="lib\icons\miniicons\page_next.gif" />
+    <Content Include="lib\icons\miniicons\page_package.gif" />
+    <Content Include="lib\icons\miniicons\page_php.gif" />
+    <Content Include="lib\icons\miniicons\page_prev.gif" />
+    <Content Include="lib\icons\miniicons\page_refresh.gif" />
+    <Content Include="lib\icons\miniicons\page_right.gif" />
+    <Content Include="lib\icons\miniicons\page_script.gif" />
+    <Content Include="lib\icons\miniicons\page_security.gif" />
+    <Content Include="lib\icons\miniicons\page_settings.gif" />
+    <Content Include="lib\icons\miniicons\page_sound.gif" />
+    <Content Include="lib\icons\miniicons\page_tag_blue.gif" />
+    <Content Include="lib\icons\miniicons\page_tag_red.gif" />
+    <Content Include="lib\icons\miniicons\page_text.gif" />
+    <Content Include="lib\icons\miniicons\page_text_delete.gif" />
+    <Content Include="lib\icons\miniicons\page_tick.gif" />
+    <Content Include="lib\icons\miniicons\page_tree.gif" />
+    <Content Include="lib\icons\miniicons\page_up.gif" />
+    <Content Include="lib\icons\miniicons\page_url.gif" />
+    <Content Include="lib\icons\miniicons\page_user.gif" />
+    <Content Include="lib\icons\miniicons\page_user_dark.gif" />
+    <Content Include="lib\icons\miniicons\page_user_light.gif" />
+    <Content Include="lib\icons\miniicons\page_video.gif" />
+    <Content Include="lib\icons\miniicons\page_wizard.gif" />
+    <Content Include="lib\icons\miniicons\table.gif" />
+    <Content Include="lib\icons\miniicons\tables.gif" />
+    <Content Include="lib\icons\miniicons\table_delete.gif" />
+    <Content Include="lib\icons\silkicons\accept.png" />
+    <Content Include="lib\icons\silkicons\add.png" />
+    <Content Include="lib\icons\silkicons\anchor.png" />
+    <Content Include="lib\icons\silkicons\application.png" />
+    <Content Include="lib\icons\silkicons\application_add.png" />
+    <Content Include="lib\icons\silkicons\application_cascade.png" />
+    <Content Include="lib\icons\silkicons\application_delete.png" />
+    <Content Include="lib\icons\silkicons\application_double.png" />
+    <Content Include="lib\icons\silkicons\application_edit.png" />
+    <Content Include="lib\icons\silkicons\application_error.png" />
+    <Content Include="lib\icons\silkicons\application_form.png" />
+    <Content Include="lib\icons\silkicons\application_form_add.png" />
+    <Content Include="lib\icons\silkicons\application_form_delete.png" />
+    <Content Include="lib\icons\silkicons\application_form_edit.png" />
+    <Content Include="lib\icons\silkicons\application_form_magnify.png" />
+    <Content Include="lib\icons\silkicons\application_get.png" />
+    <Content Include="lib\icons\silkicons\application_go.png" />
+    <Content Include="lib\icons\silkicons\application_home.png" />
+    <Content Include="lib\icons\silkicons\application_key.png" />
+    <Content Include="lib\icons\silkicons\application_lightning.png" />
+    <Content Include="lib\icons\silkicons\application_link.png" />
+    <Content Include="lib\icons\silkicons\application_osx.png" />
+    <Content Include="lib\icons\silkicons\application_osx_terminal.png" />
+    <Content Include="lib\icons\silkicons\application_put.png" />
+    <Content Include="lib\icons\silkicons\application_side_boxes.png" />
+    <Content Include="lib\icons\silkicons\application_side_contract.png" />
+    <Content Include="lib\icons\silkicons\application_side_expand.png" />
+    <Content Include="lib\icons\silkicons\application_side_list.png" />
+    <Content Include="lib\icons\silkicons\application_side_tree.png" />
+    <Content Include="lib\icons\silkicons\application_split.png" />
+    <Content Include="lib\icons\silkicons\application_tile_horizontal.png" />
+    <Content Include="lib\icons\silkicons\application_tile_vertical.png" />
+    <Content Include="lib\icons\silkicons\application_view_columns.png" />
+    <Content Include="lib\icons\silkicons\application_view_detail.png" />
+    <Content Include="lib\icons\silkicons\application_view_gallery.png" />
+    <Content Include="lib\icons\silkicons\application_view_icons.png" />
+    <Content Include="lib\icons\silkicons\application_view_list.png" />
+    <Content Include="lib\icons\silkicons\application_view_tile.png" />
+    <Content Include="lib\icons\silkicons\application_xp.png" />
+    <Content Include="lib\icons\silkicons\application_xp_terminal.png" />
+    <Content Include="lib\icons\silkicons\arrow_branch.png" />
+    <Content Include="lib\icons\silkicons\arrow_divide.png" />
+    <Content Include="lib\icons\silkicons\arrow_down.png" />
+    <Content Include="lib\icons\silkicons\arrow_in.png" />
+    <Content Include="lib\icons\silkicons\arrow_inout.png" />
+    <Content Include="lib\icons\silkicons\arrow_join.png" />
+    <Content Include="lib\icons\silkicons\arrow_left.png" />
+    <Content Include="lib\icons\silkicons\arrow_merge.png" />
+    <Content Include="lib\icons\silkicons\arrow_out.png" />
+    <Content Include="lib\icons\silkicons\arrow_redo.png" />
+    <Content Include="lib\icons\silkicons\arrow_refresh.png" />
+    <Content Include="lib\icons\silkicons\arrow_refresh_small.png" />
+    <Content Include="lib\icons\silkicons\arrow_right.png" />
+    <Content Include="lib\icons\silkicons\arrow_rotate_anticlockwise.png" />
+    <Content Include="lib\icons\silkicons\arrow_rotate_clockwise.png" />
+    <Content Include="lib\icons\silkicons\arrow_switch.png" />
+    <Content Include="lib\icons\silkicons\arrow_turn_left.png" />
+    <Content Include="lib\icons\silkicons\arrow_turn_right.png" />
+    <Content Include="lib\icons\silkicons\arrow_undo.png" />
+    <Content Include="lib\icons\silkicons\arrow_up.png" />
+    <Content Include="lib\icons\silkicons\asterisk_orange.png" />
+    <Content Include="lib\icons\silkicons\asterisk_yellow.png" />
+    <Content Include="lib\icons\silkicons\attach.png" />
+    <Content Include="lib\icons\silkicons\award_star_add.png" />
+    <Content Include="lib\icons\silkicons\award_star_bronze_1.png" />
+    <Content Include="lib\icons\silkicons\award_star_bronze_2.png" />
+    <Content Include="lib\icons\silkicons\award_star_bronze_3.png" />
+    <Content Include="lib\icons\silkicons\award_star_delete.png" />
+    <Content Include="lib\icons\silkicons\award_star_gold_1.png" />
+    <Content Include="lib\icons\silkicons\award_star_gold_2.png" />
+    <Content Include="lib\icons\silkicons\award_star_gold_3.png" />
+    <Content Include="lib\icons\silkicons\award_star_silver_1.png" />
+    <Content Include="lib\icons\silkicons\award_star_silver_2.png" />
+    <Content Include="lib\icons\silkicons\award_star_silver_3.png" />
+    <Content Include="lib\icons\silkicons\basket.png" />
+    <Content Include="lib\icons\silkicons\basket_add.png" />
+    <Content Include="lib\icons\silkicons\basket_delete.png" />
+    <Content Include="lib\icons\silkicons\basket_edit.png" />
+    <Content Include="lib\icons\silkicons\basket_error.png" />
+    <Content Include="lib\icons\silkicons\basket_go.png" />
+    <Content Include="lib\icons\silkicons\basket_put.png" />
+    <Content Include="lib\icons\silkicons\basket_remove.png" />
+    <Content Include="lib\icons\silkicons\bell.png" />
+    <Content Include="lib\icons\silkicons\bell_add.png" />
+    <Content Include="lib\icons\silkicons\bell_delete.png" />
+    <Content Include="lib\icons\silkicons\bell_error.png" />
+    <Content Include="lib\icons\silkicons\bell_go.png" />
+    <Content Include="lib\icons\silkicons\bell_link.png" />
+    <Content Include="lib\icons\silkicons\bin.png" />
+    <Content Include="lib\icons\silkicons\bin_closed.png" />
+    <Content Include="lib\icons\silkicons\bin_empty.png" />
+    <Content Include="lib\icons\silkicons\bomb.png" />
+    <Content Include="lib\icons\silkicons\book.png" />
+    <Content Include="lib\icons\silkicons\book_add.png" />
+    <Content Include="lib\icons\silkicons\book_addresses.png" />
+    <Content Include="lib\icons\silkicons\book_delete.png" />
+    <Content Include="lib\icons\silkicons\book_edit.png" />
+    <Content Include="lib\icons\silkicons\book_error.png" />
+    <Content Include="lib\icons\silkicons\book_go.png" />
+    <Content Include="lib\icons\silkicons\book_key.png" />
+    <Content Include="lib\icons\silkicons\book_link.png" />
+    <Content Include="lib\icons\silkicons\book_next.png" />
+    <Content Include="lib\icons\silkicons\book_open.png" />
+    <Content Include="lib\icons\silkicons\book_previous.png" />
+    <Content Include="lib\icons\silkicons\box.png" />
+    <Content Include="lib\icons\silkicons\brick.png" />
+    <Content Include="lib\icons\silkicons\bricks.png" />
+    <Content Include="lib\icons\silkicons\brick_add.png" />
+    <Content Include="lib\icons\silkicons\brick_delete.png" />
+    <Content Include="lib\icons\silkicons\brick_edit.png" />
+    <Content Include="lib\icons\silkicons\brick_error.png" />
+    <Content Include="lib\icons\silkicons\brick_go.png" />
+    <Content Include="lib\icons\silkicons\brick_link.png" />
+    <Content Include="lib\icons\silkicons\briefcase.png" />
+    <Content Include="lib\icons\silkicons\bug.png" />
+    <Content Include="lib\icons\silkicons\bug_add.png" />
+    <Content Include="lib\icons\silkicons\bug_delete.png" />
+    <Content Include="lib\icons\silkicons\bug_edit.png" />
+    <Content Include="lib\icons\silkicons\bug_error.png" />
+    <Content Include="lib\icons\silkicons\bug_go.png" />
+    <Content Include="lib\icons\silkicons\bug_link.png" />
+    <Content Include="lib\icons\silkicons\building.png" />
+    <Content Include="lib\icons\silkicons\building_add.png" />
+    <Content Include="lib\icons\silkicons\building_delete.png" />
+    <Content Include="lib\icons\silkicons\building_edit.png" />
+    <Content Include="lib\icons\silkicons\building_error.png" />
+    <Content Include="lib\icons\silkicons\building_go.png" />
+    <Content Include="lib\icons\silkicons\building_key.png" />
+    <Content Include="lib\icons\silkicons\building_link.png" />
+    <Content Include="lib\icons\silkicons\bullet_add.png" />
+    <Content Include="lib\icons\silkicons\bullet_arrow_bottom.png" />
+    <Content Include="lib\icons\silkicons\bullet_arrow_down.png" />
+    <Content Include="lib\icons\silkicons\bullet_arrow_top.png" />
+    <Content Include="lib\icons\silkicons\bullet_arrow_up.png" />
+    <Content Include="lib\icons\silkicons\bullet_black.png" />
+    <Content Include="lib\icons\silkicons\bullet_blue.png" />
+    <Content Include="lib\icons\silkicons\bullet_delete.png" />
+    <Content Include="lib\icons\silkicons\bullet_disk.png" />
+    <Content Include="lib\icons\silkicons\bullet_error.png" />
+    <Content Include="lib\icons\silkicons\bullet_feed.png" />
+    <Content Include="lib\icons\silkicons\bullet_go.png" />
+    <Content Include="lib\icons\silkicons\bullet_green.png" />
+    <Content Include="lib\icons\silkicons\bullet_key.png" />
+    <Content Include="lib\icons\silkicons\bullet_orange.png" />
+    <Content Include="lib\icons\silkicons\bullet_picture.png" />
+    <Content Include="lib\icons\silkicons\bullet_pink.png" />
+    <Content Include="lib\icons\silkicons\bullet_purple.png" />
+    <Content Include="lib\icons\silkicons\bullet_red.png" />
+    <Content Include="lib\icons\silkicons\bullet_star.png" />
+    <Content Include="lib\icons\silkicons\bullet_toggle_minus.png" />
+    <Content Include="lib\icons\silkicons\bullet_toggle_plus.png" />
+    <Content Include="lib\icons\silkicons\bullet_white.png" />
+    <Content Include="lib\icons\silkicons\bullet_wrench.png" />
+    <Content Include="lib\icons\silkicons\bullet_yellow.png" />
+    <Content Include="lib\icons\silkicons\cake.png" />
+    <Content Include="lib\icons\silkicons\calculator.png" />
+    <Content Include="lib\icons\silkicons\calculator_add.png" />
+    <Content Include="lib\icons\silkicons\calculator_delete.png" />
+    <Content Include="lib\icons\silkicons\calculator_edit.png" />
+    <Content Include="lib\icons\silkicons\calculator_error.png" />
+    <Content Include="lib\icons\silkicons\calculator_link.png" />
+    <Content Include="lib\icons\silkicons\calendar.png" />
+    <Content Include="lib\icons\silkicons\calendar_add.png" />
+    <Content Include="lib\icons\silkicons\calendar_delete.png" />
+    <Content Include="lib\icons\silkicons\calendar_edit.png" />
+    <Content Include="lib\icons\silkicons\calendar_link.png" />
+    <Content Include="lib\icons\silkicons\calendar_view_day.png" />
+    <Content Include="lib\icons\silkicons\calendar_view_month.png" />
+    <Content Include="lib\icons\silkicons\calendar_view_week.png" />
+    <Content Include="lib\icons\silkicons\camera.png" />
+    <Content Include="lib\icons\silkicons\camera_add.png" />
+    <Content Include="lib\icons\silkicons\camera_delete.png" />
+    <Content Include="lib\icons\silkicons\camera_edit.png" />
+    <Content Include="lib\icons\silkicons\camera_error.png" />
+    <Content Include="lib\icons\silkicons\camera_go.png" />
+    <Content Include="lib\icons\silkicons\camera_link.png" />
+    <Content Include="lib\icons\silkicons\camera_small.png" />
+    <Content Include="lib\icons\silkicons\cancel.png" />
+    <Content Include="lib\icons\silkicons\car.png" />
+    <Content Include="lib\icons\silkicons\cart.png" />
+    <Content Include="lib\icons\silkicons\cart_add.png" />
+    <Content Include="lib\icons\silkicons\cart_delete.png" />
+    <Content Include="lib\icons\silkicons\cart_edit.png" />
+    <Content Include="lib\icons\silkicons\cart_error.png" />
+    <Content Include="lib\icons\silkicons\cart_go.png" />
+    <Content Include="lib\icons\silkicons\cart_put.png" />
+    <Content Include="lib\icons\silkicons\cart_remove.png" />
+    <Content Include="lib\icons\silkicons\car_add.png" />
+    <Content Include="lib\icons\silkicons\car_delete.png" />
+    <Content Include="lib\icons\silkicons\cd.png" />
+    <Content Include="lib\icons\silkicons\cd_add.png" />
+    <Content Include="lib\icons\silkicons\cd_burn.png" />
+    <Content Include="lib\icons\silkicons\cd_delete.png" />
+    <Content Include="lib\icons\silkicons\cd_edit.png" />
+    <Content Include="lib\icons\silkicons\cd_eject.png" />
+    <Content Include="lib\icons\silkicons\cd_go.png" />
+    <Content Include="lib\icons\silkicons\chart_bar.png" />
+    <Content Include="lib\icons\silkicons\chart_bar_add.png" />
+    <Content Include="lib\icons\silkicons\chart_bar_delete.png" />
+    <Content Include="lib\icons\silkicons\chart_bar_edit.png" />
+    <Content Include="lib\icons\silkicons\chart_bar_error.png" />
+    <Content Include="lib\icons\silkicons\chart_bar_link.png" />
+    <Content Include="lib\icons\silkicons\chart_curve.png" />
+    <Content Include="lib\icons\silkicons\chart_curve_add.png" />
+    <Content Include="lib\icons\silkicons\chart_curve_delete.png" />
+    <Content Include="lib\icons\silkicons\chart_curve_edit.png" />
+    <Content Include="lib\icons\silkicons\chart_curve_error.png" />
+    <Content Include="lib\icons\silkicons\chart_curve_go.png" />
+    <Content Include="lib\icons\silkicons\chart_curve_link.png" />
+    <Content Include="lib\icons\silkicons\chart_line.png" />
+    <Content Include="lib\icons\silkicons\chart_line_add.png" />
+    <Content Include="lib\icons\silkicons\chart_line_delete.png" />
+    <Content Include="lib\icons\silkicons\chart_line_edit.png" />
+    <Content Include="lib\icons\silkicons\chart_line_error.png" />
+    <Content Include="lib\icons\silkicons\chart_line_link.png" />
+    <Content Include="lib\icons\silkicons\chart_organisation.png" />
+    <Content Include="lib\icons\silkicons\chart_organisation_add.png" />
+    <Content Include="lib\icons\silkicons\chart_organisation_delete.png" />
+    <Content Include="lib\icons\silkicons\chart_pie.png" />
+    <Content Include="lib\icons\silkicons\chart_pie_add.png" />
+    <Content Include="lib\icons\silkicons\chart_pie_delete.png" />
+    <Content Include="lib\icons\silkicons\chart_pie_edit.png" />
+    <Content Include="lib\icons\silkicons\chart_pie_error.png" />
+    <Content Include="lib\icons\silkicons\chart_pie_link.png" />
+    <Content Include="lib\icons\silkicons\clock.png" />
+    <Content Include="lib\icons\silkicons\clock_add.png" />
+    <Content Include="lib\icons\silkicons\clock_delete.png" />
+    <Content Include="lib\icons\silkicons\clock_edit.png" />
+    <Content Include="lib\icons\silkicons\clock_error.png" />
+    <Content Include="lib\icons\silkicons\clock_go.png" />
+    <Content Include="lib\icons\silkicons\clock_link.png" />
+    <Content Include="lib\icons\silkicons\clock_pause.png" />
+    <Content Include="lib\icons\silkicons\clock_play.png" />
+    <Content Include="lib\icons\silkicons\clock_red.png" />
+    <Content Include="lib\icons\silkicons\clock_stop.png" />
+    <Content Include="lib\icons\silkicons\cog.png" />
+    <Content Include="lib\icons\silkicons\cog_add.png" />
+    <Content Include="lib\icons\silkicons\cog_delete.png" />
+    <Content Include="lib\icons\silkicons\cog_edit.png" />
+    <Content Include="lib\icons\silkicons\cog_error.png" />
+    <Content Include="lib\icons\silkicons\cog_go.png" />
+    <Content Include="lib\icons\silkicons\coins.png" />
+    <Content Include="lib\icons\silkicons\coins_add.png" />
+    <Content Include="lib\icons\silkicons\coins_delete.png" />
+    <Content Include="lib\icons\silkicons\color_swatch.png" />
+    <Content Include="lib\icons\silkicons\color_wheel.png" />
+    <Content Include="lib\icons\silkicons\comment.png" />
+    <Content Include="lib\icons\silkicons\comments.png" />
+    <Content Include="lib\icons\silkicons\comments_add.png" />
+    <Content Include="lib\icons\silkicons\comments_delete.png" />
+    <Content Include="lib\icons\silkicons\comment_add.png" />
+    <Content Include="lib\icons\silkicons\comment_delete.png" />
+    <Content Include="lib\icons\silkicons\comment_edit.png" />
+    <Content Include="lib\icons\silkicons\compress.png" />
+    <Content Include="lib\icons\silkicons\computer.png" />
+    <Content Include="lib\icons\silkicons\computer_add.png" />
+    <Content Include="lib\icons\silkicons\computer_delete.png" />
+    <Content Include="lib\icons\silkicons\computer_edit.png" />
+    <Content Include="lib\icons\silkicons\computer_error.png" />
+    <Content Include="lib\icons\silkicons\computer_go.png" />
+    <Content Include="lib\icons\silkicons\computer_key.png" />
+    <Content Include="lib\icons\silkicons\computer_link.png" />
+    <Content Include="lib\icons\silkicons\connect.png" />
+    <Content Include="lib\icons\silkicons\contrast.png" />
+    <Content Include="lib\icons\silkicons\contrast_decrease.png" />
+    <Content Include="lib\icons\silkicons\contrast_high.png" />
+    <Content Include="lib\icons\silkicons\contrast_increase.png" />
+    <Content Include="lib\icons\silkicons\contrast_low.png" />
+    <Content Include="lib\icons\silkicons\controller.png" />
+    <Content Include="lib\icons\silkicons\controller_add.png" />
+    <Content Include="lib\icons\silkicons\controller_delete.png" />
+    <Content Include="lib\icons\silkicons\controller_error.png" />
+    <Content Include="lib\icons\silkicons\control_eject.png" />
+    <Content Include="lib\icons\silkicons\control_eject_blue.png" />
+    <Content Include="lib\icons\silkicons\control_end.png" />
+    <Content Include="lib\icons\silkicons\control_end_blue.png" />
+    <Content Include="lib\icons\silkicons\control_equalizer.png" />
+    <Content Include="lib\icons\silkicons\control_equalizer_blue.png" />
+    <Content Include="lib\icons\silkicons\control_fastforward.png" />
+    <Content Include="lib\icons\silkicons\control_fastforward_blue.png" />
+    <Content Include="lib\icons\silkicons\control_pause.png" />
+    <Content Include="lib\icons\silkicons\control_pause_blue.png" />
+    <Content Include="lib\icons\silkicons\control_play.png" />
+    <Content Include="lib\icons\silkicons\control_play_blue.png" />
+    <Content Include="lib\icons\silkicons\control_repeat.png" />
+    <Content Include="lib\icons\silkicons\control_repeat_blue.png" />
+    <Content Include="lib\icons\silkicons\control_rewind.png" />
+    <Content Include="lib\icons\silkicons\control_rewind_blue.png" />
+    <Content Include="lib\icons\silkicons\control_start.png" />
+    <Content Include="lib\icons\silkicons\control_start_blue.png" />
+    <Content Include="lib\icons\silkicons\control_stop.png" />
+    <Content Include="lib\icons\silkicons\control_stop_blue.png" />
+    <Content Include="lib\icons\silkicons\creditcards.png" />
+    <Content Include="lib\icons\silkicons\cross.png" />
+    <Content Include="lib\icons\silkicons\css.png" />
+    <Content Include="lib\icons\silkicons\css_add.png" />
+    <Content Include="lib\icons\silkicons\css_delete.png" />
+    <Content Include="lib\icons\silkicons\css_go.png" />
+    <Content Include="lib\icons\silkicons\css_valid.png" />
+    <Content Include="lib\icons\silkicons\cup.png" />
+    <Content Include="lib\icons\silkicons\cup_add.png" />
+    <Content Include="lib\icons\silkicons\cup_delete.png" />
+    <Content Include="lib\icons\silkicons\cup_edit.png" />
+    <Content Include="lib\icons\silkicons\cup_error.png" />
+    <Content Include="lib\icons\silkicons\cup_go.png" />
+    <Content Include="lib\icons\silkicons\cup_key.png" />
+    <Content Include="lib\icons\silkicons\cup_link.png" />
+    <Content Include="lib\icons\silkicons\cursor.png" />
+    <Content Include="lib\icons\silkicons\cut.png" />
+    <Content Include="lib\icons\silkicons\cut_red.png" />
+    <Content Include="lib\icons\silkicons\database.png" />
+    <Content Include="lib\icons\silkicons\database_add.png" />
+    <Content Include="lib\icons\silkicons\database_connect.png" />
+    <Content Include="lib\icons\silkicons\database_delete.png" />
+    <Content Include="lib\icons\silkicons\database_edit.png" />
+    <Content Include="lib\icons\silkicons\database_error.png" />
+    <Content Include="lib\icons\silkicons\database_gear.png" />
+    <Content Include="lib\icons\silkicons\database_go.png" />
+    <Content Include="lib\icons\silkicons\database_key.png" />
+    <Content Include="lib\icons\silkicons\database_lightning.png" />
+    <Content Include="lib\icons\silkicons\database_link.png" />
+    <Content Include="lib\icons\silkicons\database_refresh.png" />
+    <Content Include="lib\icons\silkicons\database_save.png" />
+    <Content Include="lib\icons\silkicons\database_table.png" />
+    <Content Include="lib\icons\silkicons\date.png" />
+    <Content Include="lib\icons\silkicons\date_add.png" />
+    <Content Include="lib\icons\silkicons\date_delete.png" />
+    <Content Include="lib\icons\silkicons\date_edit.png" />
+    <Content Include="lib\icons\silkicons\date_error.png" />
+    <Content Include="lib\icons\silkicons\date_go.png" />
+    <Content Include="lib\icons\silkicons\date_link.png" />
+    <Content Include="lib\icons\silkicons\date_magnify.png" />
+    <Content Include="lib\icons\silkicons\date_next.png" />
+    <Content Include="lib\icons\silkicons\date_previous.png" />
+    <Content Include="lib\icons\silkicons\delete.png" />
+    <Content Include="lib\icons\silkicons\disconnect.png" />
+    <Content Include="lib\icons\silkicons\disk.png" />
+    <Content Include="lib\icons\silkicons\disk_multiple.png" />
+    <Content Include="lib\icons\silkicons\door.png" />
+    <Content Include="lib\icons\silkicons\door_in.png" />
+    <Content Include="lib\icons\silkicons\door_open.png" />
+    <Content Include="lib\icons\silkicons\door_out.png" />
+    <Content Include="lib\icons\silkicons\drink.png" />
+    <Content Include="lib\icons\silkicons\drink_empty.png" />
+    <Content Include="lib\icons\silkicons\drive.png" />
+    <Content Include="lib\icons\silkicons\drive_add.png" />
+    <Content Include="lib\icons\silkicons\drive_burn.png" />
+    <Content Include="lib\icons\silkicons\drive_cd.png" />
+    <Content Include="lib\icons\silkicons\drive_cd_empty.png" />
+    <Content Include="lib\icons\silkicons\drive_delete.png" />
+    <Content Include="lib\icons\silkicons\drive_disk.png" />
+    <Content Include="lib\icons\silkicons\drive_edit.png" />
+    <Content Include="lib\icons\silkicons\drive_error.png" />
+    <Content Include="lib\icons\silkicons\drive_go.png" />
+    <Content Include="lib\icons\silkicons\drive_key.png" />
+    <Content Include="lib\icons\silkicons\drive_link.png" />
+    <Content Include="lib\icons\silkicons\drive_magnify.png" />
+    <Content Include="lib\icons\silkicons\drive_network.png" />
+    <Content Include="lib\icons\silkicons\drive_rename.png" />
+    <Content Include="lib\icons\silkicons\drive_user.png" />
+    <Content Include="lib\icons\silkicons\drive_web.png" />
+    <Content Include="lib\icons\silkicons\dvd.png" />
+    <Content Include="lib\icons\silkicons\dvd_add.png" />
+    <Content Include="lib\icons\silkicons\dvd_delete.png" />
+    <Content Include="lib\icons\silkicons\dvd_edit.png" />
+    <Content Include="lib\icons\silkicons\dvd_error.png" />
+    <Content Include="lib\icons\silkicons\dvd_go.png" />
+    <Content Include="lib\icons\silkicons\dvd_key.png" />
+    <Content Include="lib\icons\silkicons\dvd_link.png" />
+    <Content Include="lib\icons\silkicons\email.png" />
+    <Content Include="lib\icons\silkicons\email_add.png" />
+    <Content Include="lib\icons\silkicons\email_attach.png" />
+    <Content Include="lib\icons\silkicons\email_delete.png" />
+    <Content Include="lib\icons\silkicons\email_edit.png" />
+    <Content Include="lib\icons\silkicons\email_error.png" />
+    <Content Include="lib\icons\silkicons\email_go.png" />
+    <Content Include="lib\icons\silkicons\email_link.png" />
+    <Content Include="lib\icons\silkicons\email_open.png" />
+    <Content Include="lib\icons\silkicons\email_open_image.png" />
+    <Content Include="lib\icons\silkicons\emoticon_evilgrin.png" />
+    <Content Include="lib\icons\silkicons\emoticon_grin.png" />
+    <Content Include="lib\icons\silkicons\emoticon_happy.png" />
+    <Content Include="lib\icons\silkicons\emoticon_smile.png" />
+    <Content Include="lib\icons\silkicons\emoticon_surprised.png" />
+    <Content Include="lib\icons\silkicons\emoticon_tongue.png" />
+    <Content Include="lib\icons\silkicons\emoticon_unhappy.png" />
+    <Content Include="lib\icons\silkicons\emoticon_waii.png" />
+    <Content Include="lib\icons\silkicons\emoticon_wink.png" />
+    <Content Include="lib\icons\silkicons\error.png" />
+    <Content Include="lib\icons\silkicons\error_add.png" />
+    <Content Include="lib\icons\silkicons\error_delete.png" />
+    <Content Include="lib\icons\silkicons\error_go.png" />
+    <Content Include="lib\icons\silkicons\exclamation.png" />
+    <Content Include="lib\icons\silkicons\eye.png" />
+    <Content Include="lib\icons\silkicons\feed.png" />
+    <Content Include="lib\icons\silkicons\feed_add.png" />
+    <Content Include="lib\icons\silkicons\feed_delete.png" />
+    <Content Include="lib\icons\silkicons\feed_disk.png" />
+    <Content Include="lib\icons\silkicons\feed_edit.png" />
+    <Content Include="lib\icons\silkicons\feed_error.png" />
+    <Content Include="lib\icons\silkicons\feed_go.png" />
+    <Content Include="lib\icons\silkicons\feed_key.png" />
+    <Content Include="lib\icons\silkicons\feed_link.png" />
+    <Content Include="lib\icons\silkicons\feed_magnify.png" />
+    <Content Include="lib\icons\silkicons\female.png" />
+    <Content Include="lib\icons\silkicons\film.png" />
+    <Content Include="lib\icons\silkicons\film_add.png" />
+    <Content Include="lib\icons\silkicons\film_delete.png" />
+    <Content Include="lib\icons\silkicons\film_edit.png" />
+    <Content Include="lib\icons\silkicons\film_error.png" />
+    <Content Include="lib\icons\silkicons\film_go.png" />
+    <Content Include="lib\icons\silkicons\film_key.png" />
+    <Content Include="lib\icons\silkicons\film_link.png" />
+    <Content Include="lib\icons\silkicons\film_save.png" />
+    <Content Include="lib\icons\silkicons\find.png" />
+    <Content Include="lib\icons\silkicons\flag_blue.png" />
+    <Content Include="lib\icons\silkicons\flag_green.png" />
+    <Content Include="lib\icons\silkicons\flag_orange.png" />
+    <Content Include="lib\icons\silkicons\flag_pink.png" />
+    <Content Include="lib\icons\silkicons\flag_purple.png" />
+    <Content Include="lib\icons\silkicons\flag_red.png" />
+    <Content Include="lib\icons\silkicons\flag_yellow.png" />
+    <Content Include="lib\icons\silkicons\folder.png" />
+    <Content Include="lib\icons\silkicons\folder_add.png" />
+    <Content Include="lib\icons\silkicons\folder_bell.png" />
+    <Content Include="lib\icons\silkicons\folder_brick.png" />
+    <Content Include="lib\icons\silkicons\folder_bug.png" />
+    <Content Include="lib\icons\silkicons\folder_camera.png" />
+    <Content Include="lib\icons\silkicons\folder_database.png" />
+    <Content Include="lib\icons\silkicons\folder_delete.png" />
+    <Content Include="lib\icons\silkicons\folder_edit.png" />
+    <Content Include="lib\icons\silkicons\folder_error.png" />
+    <Content Include="lib\icons\silkicons\folder_explore.png" />
+    <Content Include="lib\icons\silkicons\folder_feed.png" />
+    <Content Include="lib\icons\silkicons\folder_find.png" />
+    <Content Include="lib\icons\silkicons\folder_go.png" />
+    <Content Include="lib\icons\silkicons\folder_heart.png" />
+    <Content Include="lib\icons\silkicons\folder_image.png" />
+    <Content Include="lib\icons\silkicons\folder_key.png" />
+    <Content Include="lib\icons\silkicons\folder_lightbulb.png" />
+    <Content Include="lib\icons\silkicons\folder_link.png" />
+    <Content Include="lib\icons\silkicons\folder_magnify.png" />
+    <Content Include="lib\icons\silkicons\folder_page.png" />
+    <Content Include="lib\icons\silkicons\folder_page_white.png" />
+    <Content Include="lib\icons\silkicons\folder_palette.png" />
+    <Content Include="lib\icons\silkicons\folder_picture.png" />
+    <Content Include="lib\icons\silkicons\folder_star.png" />
+    <Content Include="lib\icons\silkicons\folder_table.png" />
+    <Content Include="lib\icons\silkicons\folder_user.png" />
+    <Content Include="lib\icons\silkicons\folder_wrench.png" />
+    <Content Include="lib\icons\silkicons\font.png" />
+    <Content Include="lib\icons\silkicons\font_add.png" />
+    <Content Include="lib\icons\silkicons\font_delete.png" />
+    <Content Include="lib\icons\silkicons\font_go.png" />
+    <Content Include="lib\icons\silkicons\group.png" />
+    <Content Include="lib\icons\silkicons\group_add.png" />
+    <Content Include="lib\icons\silkicons\group_delete.png" />
+    <Content Include="lib\icons\silkicons\group_edit.png" />
+    <Content Include="lib\icons\silkicons\group_error.png" />
+    <Content Include="lib\icons\silkicons\group_gear.png" />
+    <Content Include="lib\icons\silkicons\group_go.png" />
+    <Content Include="lib\icons\silkicons\group_key.png" />
+    <Content Include="lib\icons\silkicons\group_link.png" />
+    <Content Include="lib\icons\silkicons\heart.png" />
+    <Content Include="lib\icons\silkicons\heart_add.png" />
+    <Content Include="lib\icons\silkicons\heart_delete.png" />
+    <Content Include="lib\icons\silkicons\help.png" />
+    <Content Include="lib\icons\silkicons\hourglass.png" />
+    <Content Include="lib\icons\silkicons\hourglass_add.png" />
+    <Content Include="lib\icons\silkicons\hourglass_delete.png" />
+    <Content Include="lib\icons\silkicons\hourglass_go.png" />
+    <Content Include="lib\icons\silkicons\hourglass_link.png" />
+    <Content Include="lib\icons\silkicons\house.png" />
+    <Content Include="lib\icons\silkicons\house_go.png" />
+    <Content Include="lib\icons\silkicons\house_link.png" />
+    <Content Include="lib\icons\silkicons\html.png" />
+    <Content Include="lib\icons\silkicons\html_add.png" />
+    <Content Include="lib\icons\silkicons\html_delete.png" />
+    <Content Include="lib\icons\silkicons\html_go.png" />
+    <Content Include="lib\icons\silkicons\html_valid.png" />
+    <Content Include="lib\icons\silkicons\image.png" />
+    <Content Include="lib\icons\silkicons\images.png" />
+    <Content Include="lib\icons\silkicons\image_add.png" />
+    <Content Include="lib\icons\silkicons\image_delete.png" />
+    <Content Include="lib\icons\silkicons\image_edit.png" />
+    <Content Include="lib\icons\silkicons\image_link.png" />
+    <Content Include="lib\icons\silkicons\information.png" />
+    <Content Include="lib\icons\silkicons\ipod.png" />
+    <Content Include="lib\icons\silkicons\ipod_cast.png" />
+    <Content Include="lib\icons\silkicons\ipod_cast_add.png" />
+    <Content Include="lib\icons\silkicons\ipod_cast_delete.png" />
+    <Content Include="lib\icons\silkicons\ipod_sound.png" />
+    <Content Include="lib\icons\silkicons\joystick.png" />
+    <Content Include="lib\icons\silkicons\joystick_add.png" />
+    <Content Include="lib\icons\silkicons\joystick_delete.png" />
+    <Content Include="lib\icons\silkicons\joystick_error.png" />
+    <Content Include="lib\icons\silkicons\key.png" />
+    <Content Include="lib\icons\silkicons\keyboard.png" />
+    <Content Include="lib\icons\silkicons\keyboard_add.png" />
+    <Content Include="lib\icons\silkicons\keyboard_delete.png" />
+    <Content Include="lib\icons\silkicons\keyboard_magnify.png" />
+    <Content Include="lib\icons\silkicons\key_add.png" />
+    <Content Include="lib\icons\silkicons\key_delete.png" />
+    <Content Include="lib\icons\silkicons\key_go.png" />
+    <Content Include="lib\icons\silkicons\layers.png" />
+    <Content Include="lib\icons\silkicons\layout.png" />
+    <Content Include="lib\icons\silkicons\layout_add.png" />
+    <Content Include="lib\icons\silkicons\layout_content.png" />
+    <Content Include="lib\icons\silkicons\layout_delete.png" />
+    <Content Include="lib\icons\silkicons\layout_edit.png" />
+    <Content Include="lib\icons\silkicons\layout_error.png" />
+    <Content Include="lib\icons\silkicons\layout_header.png" />
+    <Content Include="lib\icons\silkicons\layout_link.png" />
+    <Content Include="lib\icons\silkicons\layout_sidebar.png" />
+    <Content Include="lib\icons\silkicons\lightbulb.png" />
+    <Content Include="lib\icons\silkicons\lightbulb_add.png" />
+    <Content Include="lib\icons\silkicons\lightbulb_delete.png" />
+    <Content Include="lib\icons\silkicons\lightbulb_off.png" />
+    <Content Include="lib\icons\silkicons\lightning.png" />
+    <Content Include="lib\icons\silkicons\lightning_add.png" />
+    <Content Include="lib\icons\silkicons\lightning_delete.png" />
+    <Content Include="lib\icons\silkicons\lightning_go.png" />
+    <Content Include="lib\icons\silkicons\link.png" />
+    <Content Include="lib\icons\silkicons\link_add.png" />
+    <Content Include="lib\icons\silkicons\link_break.png" />
+    <Content Include="lib\icons\silkicons\link_delete.png" />
+    <Content Include="lib\icons\silkicons\link_edit.png" />
+    <Content Include="lib\icons\silkicons\link_error.png" />
+    <Content Include="lib\icons\silkicons\link_go.png" />
+    <Content Include="lib\icons\silkicons\lock.png" />
+    <Content Include="lib\icons\silkicons\lock_add.png" />
+    <Content Include="lib\icons\silkicons\lock_break.png" />
+    <Content Include="lib\icons\silkicons\lock_delete.png" />
+    <Content Include="lib\icons\silkicons\lock_edit.png" />
+    <Content Include="lib\icons\silkicons\lock_go.png" />
+    <Content Include="lib\icons\silkicons\lock_open.png" />
+    <Content Include="lib\icons\silkicons\lorry.png" />
+    <Content Include="lib\icons\silkicons\lorry_add.png" />
+    <Content Include="lib\icons\silkicons\lorry_delete.png" />
+    <Content Include="lib\icons\silkicons\lorry_error.png" />
+    <Content Include="lib\icons\silkicons\lorry_flatbed.png" />
+    <Content Include="lib\icons\silkicons\lorry_go.png" />
+    <Content Include="lib\icons\silkicons\lorry_link.png" />
+    <Content Include="lib\icons\silkicons\magifier_zoom_out.png" />
+    <Content Include="lib\icons\silkicons\magnifier.png" />
+    <Content Include="lib\icons\silkicons\magnifier_zoom_in.png" />
+    <Content Include="lib\icons\silkicons\male.png" />
+    <Content Include="lib\icons\silkicons\map.png" />
+    <Content Include="lib\icons\silkicons\map_add.png" />
+    <Content Include="lib\icons\silkicons\map_delete.png" />
+    <Content Include="lib\icons\silkicons\map_edit.png" />
+    <Content Include="lib\icons\silkicons\map_go.png" />
+    <Content Include="lib\icons\silkicons\map_magnify.png" />
+    <Content Include="lib\icons\silkicons\medal_bronze_1.png" />
+    <Content Include="lib\icons\silkicons\medal_bronze_2.png" />
+    <Content Include="lib\icons\silkicons\medal_bronze_3.png" />
+    <Content Include="lib\icons\silkicons\medal_bronze_add.png" />
+    <Content Include="lib\icons\silkicons\medal_bronze_delete.png" />
+    <Content Include="lib\icons\silkicons\medal_gold_1.png" />
+    <Content Include="lib\icons\silkicons\medal_gold_2.png" />
+    <Content Include="lib\icons\silkicons\medal_gold_3.png" />
+    <Content Include="lib\icons\silkicons\medal_gold_add.png" />
+    <Content Include="lib\icons\silkicons\medal_gold_delete.png" />
+    <Content Include="lib\icons\silkicons\medal_silver_1.png" />
+    <Content Include="lib\icons\silkicons\medal_silver_2.png" />
+    <Content Include="lib\icons\silkicons\medal_silver_3.png" />
+    <Content Include="lib\icons\silkicons\medal_silver_add.png" />
+    <Content Include="lib\icons\silkicons\medal_silver_delete.png" />
+    <Content Include="lib\icons\silkicons\money.png" />
+    <Content Include="lib\icons\silkicons\money_add.png" />
+    <Content Include="lib\icons\silkicons\money_delete.png" />
+    <Content Include="lib\icons\silkicons\money_dollar.png" />
+    <Content Include="lib\icons\silkicons\money_euro.png" />
+    <Content Include="lib\icons\silkicons\money_pound.png" />
+    <Content Include="lib\icons\silkicons\money_yen.png" />
+    <Content Include="lib\icons\silkicons\monitor.png" />
+    <Content Include="lib\icons\silkicons\monitor_add.png" />
+    <Content Include="lib\icons\silkicons\monitor_delete.png" />
+    <Content Include="lib\icons\silkicons\monitor_edit.png" />
+    <Content Include="lib\icons\silkicons\monitor_error.png" />
+    <Content Include="lib\icons\silkicons\monitor_go.png" />
+    <Content Include="lib\icons\silkicons\monitor_lightning.png" />
+    <Content Include="lib\icons\silkicons\monitor_link.png" />
+    <Content Include="lib\icons\silkicons\mouse.png" />
+    <Content Include="lib\icons\silkicons\mouse_add.png" />
+    <Content Include="lib\icons\silkicons\mouse_delete.png" />
+    <Content Include="lib\icons\silkicons\mouse_error.png" />
+    <Content Include="lib\icons\silkicons\music.png" />
+    <Content Include="lib\icons\silkicons\new.png" />
+    <Content Include="lib\icons\silkicons\newspaper.png" />
+    <Content Include="lib\icons\silkicons\newspaper_add.png" />
+    <Content Include="lib\icons\silkicons\newspaper_delete.png" />
+    <Content Include="lib\icons\silkicons\newspaper_go.png" />
+    <Content Include="lib\icons\silkicons\newspaper_link.png" />
+    <Content Include="lib\icons\silkicons\note.png" />
+    <Content Include="lib\icons\silkicons\note_add.png" />
+    <Content Include="lib\icons\silkicons\note_delete.png" />
+    <Content Include="lib\icons\silkicons\note_edit.png" />
+    <Content Include="lib\icons\silkicons\note_error.png" />
+    <Content Include="lib\icons\silkicons\note_go.png" />
+    <Content Include="lib\icons\silkicons\overlays.png" />
+    <Content Include="lib\icons\silkicons\package.png" />
+    <Content Include="lib\icons\silkicons\package_add.png" />
+    <Content Include="lib\icons\silkicons\package_delete.png" />
+    <Content Include="lib\icons\silkicons\package_go.png" />
+    <Content Include="lib\icons\silkicons\package_green.png" />
+    <Content Include="lib\icons\silkicons\package_link.png" />
+    <Content Include="lib\icons\silkicons\page.png" />
+    <Content Include="lib\icons\silkicons\page_add.png" />
+    <Content Include="lib\icons\silkicons\page_attach.png" />
+    <Content Include="lib\icons\silkicons\page_code.png" />
+    <Content Include="lib\icons\silkicons\page_copy.png" />
+    <Content Include="lib\icons\silkicons\page_delete.png" />
+    <Content Include="lib\icons\silkicons\page_edit.png" />
+    <Content Include="lib\icons\silkicons\page_error.png" />
+    <Content Include="lib\icons\silkicons\page_excel.png" />
+    <Content Include="lib\icons\silkicons\page_find.png" />
+    <Content Include="lib\icons\silkicons\page_gear.png" />
+    <Content Include="lib\icons\silkicons\page_go.png" />
+    <Content Include="lib\icons\silkicons\page_green.png" />
+    <Content Include="lib\icons\silkicons\page_key.png" />
+    <Content Include="lib\icons\silkicons\page_lightning.png" />
+    <Content Include="lib\icons\silkicons\page_link.png" />
+    <Content Include="lib\icons\silkicons\page_paintbrush.png" />
+    <Content Include="lib\icons\silkicons\page_paste.png" />
+    <Content Include="lib\icons\silkicons\page_red.png" />
+    <Content Include="lib\icons\silkicons\page_refresh.png" />
+    <Content Include="lib\icons\silkicons\page_save.png" />
+    <Content Include="lib\icons\silkicons\page_white.png" />
+    <Content Include="lib\icons\silkicons\page_white_acrobat.png" />
+    <Content Include="lib\icons\silkicons\page_white_actionscript.png" />
+    <Content Include="lib\icons\silkicons\page_white_add.png" />
+    <Content Include="lib\icons\silkicons\page_white_c.png" />
+    <Content Include="lib\icons\silkicons\page_white_camera.png" />
+    <Content Include="lib\icons\silkicons\page_white_cd.png" />
+    <Content Include="lib\icons\silkicons\page_white_code.png" />
+    <Content Include="lib\icons\silkicons\page_white_code_red.png" />
+    <Content Include="lib\icons\silkicons\page_white_coldfusion.png" />
+    <Content Include="lib\icons\silkicons\page_white_compressed.png" />
+    <Content Include="lib\icons\silkicons\page_white_copy.png" />
+    <Content Include="lib\icons\silkicons\page_white_cplusplus.png" />
+    <Content Include="lib\icons\silkicons\page_white_csharp.png" />
+    <Content Include="lib\icons\silkicons\page_white_cup.png" />
+    <Content Include="lib\icons\silkicons\page_white_database.png" />
+    <Content Include="lib\icons\silkicons\page_white_delete.png" />
+    <Content Include="lib\icons\silkicons\page_white_dvd.png" />
+    <Content Include="lib\icons\silkicons\page_white_edit.png" />
+    <Content Include="lib\icons\silkicons\page_white_error.png" />
+    <Content Include="lib\icons\silkicons\page_white_excel.png" />
+    <Content Include="lib\icons\silkicons\page_white_find.png" />
+    <Content Include="lib\icons\silkicons\page_white_flash.png" />
+    <Content Include="lib\icons\silkicons\page_white_freehand.png" />
+    <Content Include="lib\icons\silkicons\page_white_gear.png" />
+    <Content Include="lib\icons\silkicons\page_white_get.png" />
+    <Content Include="lib\icons\silkicons\page_white_go.png" />
+    <Content Include="lib\icons\silkicons\page_white_h.png" />
+    <Content Include="lib\icons\silkicons\page_white_horizontal.png" />
+    <Content Include="lib\icons\silkicons\page_white_key.png" />
+    <Content Include="lib\icons\silkicons\page_white_lightning.png" />
+    <Content Include="lib\icons\silkicons\page_white_link.png" />
+    <Content Include="lib\icons\silkicons\page_white_magnify.png" />
+    <Content Include="lib\icons\silkicons\page_white_medal.png" />
+    <Content Include="lib\icons\silkicons\page_white_office.png" />
+    <Content Include="lib\icons\silkicons\page_white_paint.png" />
+    <Content Include="lib\icons\silkicons\page_white_paintbrush.png" />
+    <Content Include="lib\icons\silkicons\page_white_paste.png" />
+    <Content Include="lib\icons\silkicons\page_white_php.png" />
+    <Content Include="lib\icons\silkicons\page_white_picture.png" />
+    <Content Include="lib\icons\silkicons\page_white_powerpoint.png" />
+    <Content Include="lib\icons\silkicons\page_white_put.png" />
+    <Content Include="lib\icons\silkicons\page_white_ruby.png" />
+    <Content Include="lib\icons\silkicons\page_white_stack.png" />
+    <Content Include="lib\icons\silkicons\page_white_star.png" />
+    <Content Include="lib\icons\silkicons\page_white_swoosh.png" />
+    <Content Include="lib\icons\silkicons\page_white_text.png" />
+    <Content Include="lib\icons\silkicons\page_white_text_width.png" />
+    <Content Include="lib\icons\silkicons\page_white_tux.png" />
+    <Content Include="lib\icons\silkicons\page_white_vector.png" />
+    <Content Include="lib\icons\silkicons\page_white_visualstudio.png" />
+    <Content Include="lib\icons\silkicons\page_white_width.png" />
+    <Content Include="lib\icons\silkicons\page_white_word.png" />
+    <Content Include="lib\icons\silkicons\page_white_world.png" />
+    <Content Include="lib\icons\silkicons\page_white_wrench.png" />
+    <Content Include="lib\icons\silkicons\page_white_zip.png" />
+    <Content Include="lib\icons\silkicons\page_word.png" />
+    <Content Include="lib\icons\silkicons\page_world.png" />
+    <Content Include="lib\icons\silkicons\paintbrush.png" />
+    <Content Include="lib\icons\silkicons\paintcan.png" />
+    <Content Include="lib\icons\silkicons\palette.png" />
+    <Content Include="lib\icons\silkicons\paste_plain.png" />
+    <Content Include="lib\icons\silkicons\paste_word.png" />
+    <Content Include="lib\icons\silkicons\pencil.png" />
+    <Content Include="lib\icons\silkicons\pencil_add.png" />
+    <Content Include="lib\icons\silkicons\pencil_delete.png" />
+    <Content Include="lib\icons\silkicons\pencil_go.png" />
+    <Content Include="lib\icons\silkicons\phone.png" />
+    <Content Include="lib\icons\silkicons\phone_add.png" />
+    <Content Include="lib\icons\silkicons\phone_delete.png" />
+    <Content Include="lib\icons\silkicons\phone_sound.png" />
+    <Content Include="lib\icons\silkicons\photo.png" />
+    <Content Include="lib\icons\silkicons\photos.png" />
+    <Content Include="lib\icons\silkicons\photo_add.png" />
+    <Content Include="lib\icons\silkicons\photo_delete.png" />
+    <Content Include="lib\icons\silkicons\photo_link.png" />
+    <Content Include="lib\icons\silkicons\picture.png" />
+    <Content Include="lib\icons\silkicons\pictures.png" />
+    <Content Include="lib\icons\silkicons\picture_add.png" />
+    <Content Include="lib\icons\silkicons\picture_delete.png" />
+    <Content Include="lib\icons\silkicons\picture_edit.png" />
+    <Content Include="lib\icons\silkicons\picture_empty.png" />
+    <Content Include="lib\icons\silkicons\picture_error.png" />
+    <Content Include="lib\icons\silkicons\picture_go.png" />
+    <Content Include="lib\icons\silkicons\picture_key.png" />
+    <Content Include="lib\icons\silkicons\picture_link.png" />
+    <Content Include="lib\icons\silkicons\picture_save.png" />
+    <Content Include="lib\icons\silkicons\pilcrow.png" />
+    <Content Include="lib\icons\silkicons\pill.png" />
+    <Content Include="lib\icons\silkicons\pill_add.png" />
+    <Content Include="lib\icons\silkicons\pill_delete.png" />
+    <Content Include="lib\icons\silkicons\pill_go.png" />
+    <Content Include="lib\icons\silkicons\plugin.png" />
+    <Content Include="lib\icons\silkicons\plugin_add.png" />
+    <Content Include="lib\icons\silkicons\plugin_delete.png" />
+    <Content Include="lib\icons\silkicons\plugin_disabled.png" />
+    <Content Include="lib\icons\silkicons\plugin_edit.png" />
+    <Content Include="lib\icons\silkicons\plugin_error.png" />
+    <Content Include="lib\icons\silkicons\plugin_go.png" />
+    <Content Include="lib\icons\silkicons\plugin_link.png" />
+    <Content Include="lib\icons\silkicons\printer.png" />
+    <Content Include="lib\icons\silkicons\printer_add.png" />
+    <Content Include="lib\icons\silkicons\printer_delete.png" />
+    <Content Include="lib\icons\silkicons\printer_empty.png" />
+    <Content Include="lib\icons\silkicons\printer_error.png" />
+    <Content Include="lib\icons\silkicons\rainbow.png" />
+    <Content Include="lib\icons\silkicons\report.png" />
+    <Content Include="lib\icons\silkicons\report_add.png" />
+    <Content Include="lib\icons\silkicons\report_delete.png" />
+    <Content Include="lib\icons\silkicons\report_disk.png" />
+    <Content Include="lib\icons\silkicons\report_edit.png" />
+    <Content Include="lib\icons\silkicons\report_go.png" />
+    <Content Include="lib\icons\silkicons\report_key.png" />
+    <Content Include="lib\icons\silkicons\report_link.png" />
+    <Content Include="lib\icons\silkicons\report_magnify.png" />
+    <Content Include="lib\icons\silkicons\report_picture.png" />
+    <Content Include="lib\icons\silkicons\report_user.png" />
+    <Content Include="lib\icons\silkicons\report_word.png" />
+    <Content Include="lib\icons\silkicons\resultset_first.png" />
+    <Content Include="lib\icons\silkicons\resultset_last.png" />
+    <Content Include="lib\icons\silkicons\resultset_next.png" />
+    <Content Include="lib\icons\silkicons\resultset_previous.png" />
+    <Content Include="lib\icons\silkicons\rosette.png" />
+    <Content Include="lib\icons\silkicons\rss.png" />
+    <Content Include="lib\icons\silkicons\rss_add.png" />
+    <Content Include="lib\icons\silkicons\rss_delete.png" />
+    <Content Include="lib\icons\silkicons\rss_go.png" />
+    <Content Include="lib\icons\silkicons\rss_valid.png" />
+    <Content Include="lib\icons\silkicons\ruby.png" />
+    <Content Include="lib\icons\silkicons\ruby_add.png" />
+    <Content Include="lib\icons\silkicons\ruby_delete.png" />
+    <Content Include="lib\icons\silkicons\ruby_gear.png" />
+    <Content Include="lib\icons\silkicons\ruby_get.png" />
+    <Content Include="lib\icons\silkicons\ruby_go.png" />
+    <Content Include="lib\icons\silkicons\ruby_key.png" />
+    <Content Include="lib\icons\silkicons\ruby_link.png" />
+    <Content Include="lib\icons\silkicons\ruby_put.png" />
+    <Content Include="lib\icons\silkicons\script.png" />
+    <Content Include="lib\icons\silkicons\script_add.png" />
+    <Content Include="lib\icons\silkicons\script_code.png" />
+    <Content Include="lib\icons\silkicons\script_code_red.png" />
+    <Content Include="lib\icons\silkicons\script_delete.png" />
+    <Content Include="lib\icons\silkicons\script_edit.png" />
+    <Content Include="lib\icons\silkicons\script_error.png" />
+    <Content Include="lib\icons\silkicons\script_gear.png" />
+    <Content Include="lib\icons\silkicons\script_go.png" />
+    <Content Include="lib\icons\silkicons\script_key.png" />
+    <Content Include="lib\icons\silkicons\script_lightning.png" />
+    <Content Include="lib\icons\silkicons\script_link.png" />
+    <Content Include="lib\icons\silkicons\script_palette.png" />
+    <Content Include="lib\icons\silkicons\script_save.png" />
+    <Content Include="lib\icons\silkicons\server.png" />
+    <Content Include="lib\icons\silkicons\server_add.png" />
+    <Content Include="lib\icons\silkicons\server_chart.png" />
+    <Content Include="lib\icons\silkicons\server_compressed.png" />
+    <Content Include="lib\icons\silkicons\server_connect.png" />
+    <Content Include="lib\icons\silkicons\server_database.png" />
+    <Content Include="lib\icons\silkicons\server_delete.png" />
+    <Content Include="lib\icons\silkicons\server_edit.png" />
+    <Content Include="lib\icons\silkicons\server_error.png" />
+    <Content Include="lib\icons\silkicons\server_go.png" />
+    <Content Include="lib\icons\silkicons\server_key.png" />
+    <Content Include="lib\icons\silkicons\server_lightning.png" />
+    <Content Include="lib\icons\silkicons\server_link.png" />
+    <Content Include="lib\icons\silkicons\server_uncompressed.png" />
+    <Content Include="lib\icons\silkicons\shading.png" />
+    <Content Include="lib\icons\silkicons\shape_align_bottom.png" />
+    <Content Include="lib\icons\silkicons\shape_align_center.png" />
+    <Content Include="lib\icons\silkicons\shape_align_left.png" />
+    <Content Include="lib\icons\silkicons\shape_align_middle.png" />
+    <Content Include="lib\icons\silkicons\shape_align_right.png" />
+    <Content Include="lib\icons\silkicons\shape_align_top.png" />
+    <Content Include="lib\icons\silkicons\shape_flip_horizontal.png" />
+    <Content Include="lib\icons\silkicons\shape_flip_vertical.png" />
+    <Content Include="lib\icons\silkicons\shape_group.png" />
+    <Content Include="lib\icons\silkicons\shape_handles.png" />
+    <Content Include="lib\icons\silkicons\shape_move_back.png" />
+    <Content Include="lib\icons\silkicons\shape_move_backwards.png" />
+    <Content Include="lib\icons\silkicons\shape_move_forwards.png" />
+    <Content Include="lib\icons\silkicons\shape_move_front.png" />
+    <Content Include="lib\icons\silkicons\shape_rotate_anticlockwise.png" />
+    <Content Include="lib\icons\silkicons\shape_rotate_clockwise.png" />
+    <Content Include="lib\icons\silkicons\shape_square.png" />
+    <Content Include="lib\icons\silkicons\shape_square_add.png" />
+    <Content Include="lib\icons\silkicons\shape_square_delete.png" />
+    <Content Include="lib\icons\silkicons\shape_square_edit.png" />
+    <Content Include="lib\icons\silkicons\shape_square_error.png" />
+    <Content Include="lib\icons\silkicons\shape_square_go.png" />
+    <Content Include="lib\icons\silkicons\shape_square_key.png" />
+    <Content Include="lib\icons\silkicons\shape_square_link.png" />
+    <Content Include="lib\icons\silkicons\shape_ungroup.png" />
+    <Content Include="lib\icons\silkicons\shield.png" />
+    <Content Include="lib\icons\silkicons\shield_add.png" />
+    <Content Include="lib\icons\silkicons\shield_delete.png" />
+    <Content Include="lib\icons\silkicons\shield_go.png" />
+    <Content Include="lib\icons\silkicons\sitemap.png" />
+    <Content Include="lib\icons\silkicons\sitemap_color.png" />
+    <Content Include="lib\icons\silkicons\sound.png" />
+    <Content Include="lib\icons\silkicons\sound_add.png" />
+    <Content Include="lib\icons\silkicons\sound_delete.png" />
+    <Content Include="lib\icons\silkicons\sound_low.png" />
+    <Content Include="lib\icons\silkicons\sound_mute.png" />
+    <Content Include="lib\icons\silkicons\sound_none.png" />
+    <Content Include="lib\icons\silkicons\spellcheck.png" />
+    <Content Include="lib\icons\silkicons\sport_8ball.png" />
+    <Content Include="lib\icons\silkicons\sport_basketball.png" />
+    <Content Include="lib\icons\silkicons\sport_football.png" />
+    <Content Include="lib\icons\silkicons\sport_golf.png" />
+    <Content Include="lib\icons\silkicons\sport_raquet.png" />
+    <Content Include="lib\icons\silkicons\sport_shuttlecock.png" />
+    <Content Include="lib\icons\silkicons\sport_soccer.png" />
+    <Content Include="lib\icons\silkicons\sport_tennis.png" />
+    <Content Include="lib\icons\silkicons\star.png" />
+    <Content Include="lib\icons\silkicons\status_away.png" />
+    <Content Include="lib\icons\silkicons\status_busy.png" />
+    <Content Include="lib\icons\silkicons\status_offline.png" />
+    <Content Include="lib\icons\silkicons\status_online.png" />
+    <Content Include="lib\icons\silkicons\stop.png" />
+    <Content Include="lib\icons\silkicons\style.png" />
+    <Content Include="lib\icons\silkicons\style_add.png" />
+    <Content Include="lib\icons\silkicons\style_delete.png" />
+    <Content Include="lib\icons\silkicons\style_edit.png" />
+    <Content Include="lib\icons\silkicons\style_go.png" />
+    <Content Include="lib\icons\silkicons\sum.png" />
+    <Content Include="lib\icons\silkicons\tab.png" />
+    <Content Include="lib\icons\silkicons\table.png" />
+    <Content Include="lib\icons\silkicons\table_add.png" />
+    <Content Include="lib\icons\silkicons\table_delete.png" />
+    <Content Include="lib\icons\silkicons\table_edit.png" />
+    <Content Include="lib\icons\silkicons\table_error.png" />
+    <Content Include="lib\icons\silkicons\table_gear.png" />
+    <Content Include="lib\icons\silkicons\table_go.png" />
+    <Content Include="lib\icons\silkicons\table_key.png" />
+    <Content Include="lib\icons\silkicons\table_lightning.png" />
+    <Content Include="lib\icons\silkicons\table_link.png" />
+    <Content Include="lib\icons\silkicons\table_multiple.png" />
+    <Content Include="lib\icons\silkicons\table_refresh.png" />
+    <Content Include="lib\icons\silkicons\table_relationship.png" />
+    <Content Include="lib\icons\silkicons\table_row_delete.png" />
+    <Content Include="lib\icons\silkicons\table_row_insert.png" />
+    <Content Include="lib\icons\silkicons\table_save.png" />
+    <Content Include="lib\icons\silkicons\table_sort.png" />
+    <Content Include="lib\icons\silkicons\tab_add.png" />
+    <Content Include="lib\icons\silkicons\tab_delete.png" />
+    <Content Include="lib\icons\silkicons\tab_edit.png" />
+    <Content Include="lib\icons\silkicons\tab_go.png" />
+    <Content Include="lib\icons\silkicons\tag.png" />
+    <Content Include="lib\icons\silkicons\tag_blue.png" />
+    <Content Include="lib\icons\silkicons\tag_blue_add.png" />
+    <Content Include="lib\icons\silkicons\tag_blue_delete.png" />
+    <Content Include="lib\icons\silkicons\tag_blue_edit.png" />
+    <Content Include="lib\icons\silkicons\tag_green.png" />
+    <Content Include="lib\icons\silkicons\tag_orange.png" />
+    <Content Include="lib\icons\silkicons\tag_pink.png" />
+    <Content Include="lib\icons\silkicons\tag_purple.png" />
+    <Content Include="lib\icons\silkicons\tag_red.png" />
+    <Content Include="lib\icons\silkicons\tag_yellow.png" />
+    <Content Include="lib\icons\silkicons\telephone.png" />
+    <Content Include="lib\icons\silkicons\telephone_add.png" />
+    <Content Include="lib\icons\silkicons\telephone_delete.png" />
+    <Content Include="lib\icons\silkicons\telephone_edit.png" />
+    <Content Include="lib\icons\silkicons\telephone_error.png" />
+    <Content Include="lib\icons\silkicons\telephone_go.png" />
+    <Content Include="lib\icons\silkicons\telephone_key.png" />
+    <Content Include="lib\icons\silkicons\telephone_link.png" />
+    <Content Include="lib\icons\silkicons\television.png" />
+    <Content Include="lib\icons\silkicons\television_add.png" />
+    <Content Include="lib\icons\silkicons\television_delete.png" />
+    <Content Include="lib\icons\silkicons\textfield.png" />
+    <Content Include="lib\icons\silkicons\textfield_add.png" />
+    <Content Include="lib\icons\silkicons\textfield_delete.png" />
+    <Content Include="lib\icons\silkicons\textfield_key.png" />
+    <Content Include="lib\icons\silkicons\textfield_rename.png" />
+    <Content Include="lib\icons\silkicons\text_align_center.png" />
+    <Content Include="lib\icons\silkicons\text_align_justify.png" />
+    <Content Include="lib\icons\silkicons\text_align_left.png" />
+    <Content Include="lib\icons\silkicons\text_align_right.png" />
+    <Content Include="lib\icons\silkicons\text_allcaps.png" />
+    <Content Include="lib\icons\silkicons\text_bold.png" />
+    <Content Include="lib\icons\silkicons\text_columns.png" />
+    <Content Include="lib\icons\silkicons\text_dropcaps.png" />
+    <Content Include="lib\icons\silkicons\text_heading_1.png" />
+    <Content Include="lib\icons\silkicons\text_heading_2.png" />
+    <Content Include="lib\icons\silkicons\text_heading_3.png" />
+    <Content Include="lib\icons\silkicons\text_heading_4.png" />
+    <Content Include="lib\icons\silkicons\text_heading_5.png" />
+    <Content Include="lib\icons\silkicons\text_heading_6.png" />
+    <Content Include="lib\icons\silkicons\text_horizontalrule.png" />
+    <Content Include="lib\icons\silkicons\text_indent.png" />
+    <Content Include="lib\icons\silkicons\text_indent_remove.png" />
+    <Content Include="lib\icons\silkicons\text_italic.png" />
+    <Content Include="lib\icons\silkicons\text_kerning.png" />
+    <Content Include="lib\icons\silkicons\text_letterspacing.png" />
+    <Content Include="lib\icons\silkicons\text_letter_omega.png" />
+    <Content Include="lib\icons\silkicons\text_linespacing.png" />
+    <Content Include="lib\icons\silkicons\text_list_bullets.png" />
+    <Content Include="lib\icons\silkicons\text_list_numbers.png" />
+    <Content Include="lib\icons\silkicons\text_lowercase.png" />
+    <Content Include="lib\icons\silkicons\text_padding_bottom.png" />
+    <Content Include="lib\icons\silkicons\text_padding_left.png" />
+    <Content Include="lib\icons\silkicons\text_padding_right.png" />
+    <Content Include="lib\icons\silkicons\text_padding_top.png" />
+    <Content Include="lib\icons\silkicons\text_replace.png" />
+    <Content Include="lib\icons\silkicons\text_signature.png" />
+    <Content Include="lib\icons\silkicons\text_smallcaps.png" />
+    <Content Include="lib\icons\silkicons\text_strikethrough.png" />
+    <Content Include="lib\icons\silkicons\text_subscript.png" />
+    <Content Include="lib\icons\silkicons\text_superscript.png" />
+    <Content Include="lib\icons\silkicons\text_underline.png" />
+    <Content Include="lib\icons\silkicons\text_uppercase.png" />
+    <Content Include="lib\icons\silkicons\thumb_down.png" />
+    <Content Include="lib\icons\silkicons\thumb_up.png" />
+    <Content Include="lib\icons\silkicons\tick.png" />
+    <Content Include="lib\icons\silkicons\time.png" />
+    <Content Include="lib\icons\silkicons\timeline_marker.png" />
+    <Content Include="lib\icons\silkicons\time_add.png" />
+    <Content Include="lib\icons\silkicons\time_delete.png" />
+    <Content Include="lib\icons\silkicons\time_go.png" />
+    <Content Include="lib\icons\silkicons\transmit.png" />
+    <Content Include="lib\icons\silkicons\transmit_add.png" />
+    <Content Include="lib\icons\silkicons\transmit_blue.png" />
+    <Content Include="lib\icons\silkicons\transmit_delete.png" />
+    <Content Include="lib\icons\silkicons\transmit_edit.png" />
+    <Content Include="lib\icons\silkicons\transmit_error.png" />
+    <Content Include="lib\icons\silkicons\transmit_go.png" />
+    <Content Include="lib\icons\silkicons\tux.png" />
+    <Content Include="lib\icons\silkicons\user.png" />
+    <Content Include="lib\icons\silkicons\user_add.png" />
+    <Content Include="lib\icons\silkicons\user_comment.png" />
+    <Content Include="lib\icons\silkicons\user_delete.png" />
+    <Content Include="lib\icons\silkicons\user_edit.png" />
+    <Content Include="lib\icons\silkicons\user_female.png" />
+    <Content Include="lib\icons\silkicons\user_go.png" />
+    <Content Include="lib\icons\silkicons\user_gray.png" />
+    <Content Include="lib\icons\silkicons\user_green.png" />
+    <Content Include="lib\icons\silkicons\user_orange.png" />
+    <Content Include="lib\icons\silkicons\user_red.png" />
+    <Content Include="lib\icons\silkicons\user_suit.png" />
+    <Content Include="lib\icons\silkicons\vcard.png" />
+    <Content Include="lib\icons\silkicons\vcard_add.png" />
+    <Content Include="lib\icons\silkicons\vcard_delete.png" />
+    <Content Include="lib\icons\silkicons\vcard_edit.png" />
+    <Content Include="lib\icons\silkicons\vector.png" />
+    <Content Include="lib\icons\silkicons\vector_add.png" />
+    <Content Include="lib\icons\silkicons\vector_delete.png" />
+    <Content Include="lib\icons\silkicons\wand.png" />
+    <Content Include="lib\icons\silkicons\weather_clouds.png" />
+    <Content Include="lib\icons\silkicons\weather_cloudy.png" />
+    <Content Include="lib\icons\silkicons\weather_lightning.png" />
+    <Content Include="lib\icons\silkicons\weather_rain.png" />
+    <Content Include="lib\icons\silkicons\weather_snow.png" />
+    <Content Include="lib\icons\silkicons\weather_sun.png" />
+    <Content Include="lib\icons\silkicons\webcam.png" />
+    <Content Include="lib\icons\silkicons\webcam_add.png" />
+    <Content Include="lib\icons\silkicons\webcam_delete.png" />
+    <Content Include="lib\icons\silkicons\webcam_error.png" />
+    <Content Include="lib\icons\silkicons\world.png" />
+    <Content Include="lib\icons\silkicons\world_add.png" />
+    <Content Include="lib\icons\silkicons\world_delete.png" />
+    <Content Include="lib\icons\silkicons\world_edit.png" />
+    <Content Include="lib\icons\silkicons\world_go.png" />
+    <Content Include="lib\icons\silkicons\world_link.png" />
+    <Content Include="lib\icons\silkicons\wrench.png" />
+    <Content Include="lib\icons\silkicons\wrench_orange.png" />
+    <Content Include="lib\icons\silkicons\xhtml.png" />
+    <Content Include="lib\icons\silkicons\xhtml_add.png" />
+    <Content Include="lib\icons\silkicons\xhtml_delete.png" />
+    <Content Include="lib\icons\silkicons\xhtml_go.png" />
+    <Content Include="lib\icons\silkicons\xhtml_valid.png" />
+    <Content Include="lib\icons\silkicons\zoom.png" />
+    <Content Include="lib\icons\silkicons\zoom_in.png" />
+    <Content Include="lib\icons\silkicons\zoom_out.png" />
+    <Content Include="lib\images\loading.gif" />
+    <Content Include="lib\jquery-validation\jquery.metadata.js" />
+    <Content Include="lib\jquery-validation\jquery.validate.min.js" />
+    <Content Include="lib\jquery-validation\messages_cn.js" />
+    <Content Include="lib\jquery-validation\version.txt" />
+    <Content Include="lib\jquery\jquery-1.3.2.min.js" />
+    <Content Include="lib\jquery\jquery-1.4.4.min.js" />
+    <Content Include="lib\jquery\jquery-1.5.2.min.js" />
+    <Content Include="lib\json2.js" />
+    <Content Include="lib\ligerUI\js\core\base.js" />
+    <Content Include="lib\ligerUI\js\ligerui.all.js" />
+    <Content Include="lib\ligerUI\js\ligerui.min.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerAccordion.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerButton.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerCheckBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerComboBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerDateEditor.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerDialog.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerDrag.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerEasyTab.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerFilter.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerForm.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerGrid.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerLayout.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerMenu.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerMenuBar.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerMessageBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerRadio.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerResizable.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerSpinner.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTab.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTextBox.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTip.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerToolBar.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerTree.js" />
+    <Content Include="lib\ligerUI\js\plugins\ligerWindow.js" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-all.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-common.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-dialog.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-form.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-grid.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-layout.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-menu.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-tab.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\css\ligerui-tree.css" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\bigloading.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\drop-icons.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\exclamation.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\invalid-line.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\loading.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\common\table.png" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-panel-title-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-panel-title-pressed.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-panel-title.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-tab-title-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-tab-title-pressed.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-tab-title.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-text.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-trigger-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-trigger-pressed.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\bg-trigger.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\btn-l.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\btn-r.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\btn.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\button-bg-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\button-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\checkbox.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\dateeditor-bar-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\dateeditor-header-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\controls\radio.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-first.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-last.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-next.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\dateeditor\icon-prev.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\form\verify-corner.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-checkbox-checked.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-checkbox.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-detail-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-detail-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-tree-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\grid-tree-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\header-bg-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\header-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\header2-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\popup-line.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\grid\popup-row-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\bar-button-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\checkbox-checked.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\checkbox.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\cross.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-close-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-down.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-drop.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-edited.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-first.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-last.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-line.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-load.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-next.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-prev.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-sort-asc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-sort-desc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\icon\icon-up.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\accordion-content.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\accordion-header-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\accordion-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\layout-header-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\layout-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\layout-sidebar-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-bottom.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-left.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-right.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\mini-top.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\panel-content.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\panel-header-over.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\panel-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-left-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-over-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-item-right-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\tabs-tools.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\layout\togglebar.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-arrow.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-down.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-over-l.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-over-m.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-item-over-r.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-line-x.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\menu\menu-line-y.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\bar-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\header-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\header-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\header2-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-btn-l.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-btn-r.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-btn.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-header.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-menu-item-down.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-menu.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-toolbar.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\panel\panel-tools.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\folder-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\folder.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\loading.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-leaf.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-level.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-noline.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-status-close.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-status-open.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree-status.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\tree\tree.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\box-icons.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\box.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-bc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-icons.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-tc.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog-winbtns.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\dialog.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskbar-task.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskbar.gif" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskbar.png" />
+    <Content Include="lib\ligerUI\skins\Aqua\images\win\taskicon.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\css\all.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\common.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\dialog.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\form.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\grid.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\layout.css" />
+    <Content Include="lib\ligerUI\skins\Gray\css\tab.css" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\accordion-header.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\icon-close-over.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\icon-close.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\layout-header.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-left-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-left-selected.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-right-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-right-selected.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\tabs-item-selected.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\layout\togglebar.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button-over.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button1.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\button2.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-bar.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-btn-over.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-btn.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\dateeditor-thead.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\grid-detail-close.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\grid-detail-open.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\gridalt.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\gridbar.jpg" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\grideditor.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\icon-down.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\icon-up.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\input.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\inputdisabled.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\loading.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\loading2.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\ui\trigger.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\win\dialog-winbtns.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\win\dialogbtn.gif" />
+    <Content Include="lib\ligerUI\skins\Gray\images\win\dialogicon.gif" />
+    <Content Include="lib\ligerUI\skins\icons\add.gif" />
+    <Content Include="lib\ligerUI\skins\icons\archives.gif" />
+    <Content Include="lib\ligerUI\skins\icons\attibutes.gif" />
+    <Content Include="lib\ligerUI\skins\icons\back.gif" />
+    <Content Include="lib\ligerUI\skins\icons\bluebook.gif" />
+    <Content Include="lib\ligerUI\skins\icons\bookpen.gif" />
+    <Content Include="lib\ligerUI\skins\icons\busy.gif" />
+    <Content Include="lib\ligerUI\skins\icons\calendar.gif" />
+    <Content Include="lib\ligerUI\skins\icons\candle.gif" />
+    <Content Include="lib\ligerUI\skins\icons\coffee.gif" />
+    <Content Include="lib\ligerUI\skins\icons\comment.gif" />
+    <Content Include="lib\ligerUI\skins\icons\communication.gif" />
+    <Content Include="lib\ligerUI\skins\icons\config.gif" />
+    <Content Include="lib\ligerUI\skins\icons\customers.gif" />
+    <Content Include="lib\ligerUI\skins\icons\cut.gif" />
+    <Content Include="lib\ligerUI\skins\icons\database.gif" />
+    <Content Include="lib\ligerUI\skins\icons\delete.gif" />
+    <Content Include="lib\ligerUI\skins\icons\discuss.gif" />
+    <Content Include="lib\ligerUI\skins\icons\edit.gif" />
+    <Content Include="lib\ligerUI\skins\icons\graywarn.gif" />
+    <Content Include="lib\ligerUI\skins\icons\greenwarn.gif" />
+    <Content Include="lib\ligerUI\skins\icons\help.gif" />
+    <Content Include="lib\ligerUI\skins\icons\home.gif" />
+    <Content Include="lib\ligerUI\skins\icons\lock.gif" />
+    <Content Include="lib\ligerUI\skins\icons\logout.gif" />
+    <Content Include="lib\ligerUI\skins\icons\mailbox.gif" />
+    <Content Include="lib\ligerUI\skins\icons\memeber.gif" />
+    <Content Include="lib\ligerUI\skins\icons\modify.gif" />
+    <Content Include="lib\ligerUI\skins\icons\msn.gif" />
+    <Content Include="lib\ligerUI\skins\icons\myaccount.gif" />
+    <Content Include="lib\ligerUI\skins\icons\ok.gif" />
+    <Content Include="lib\ligerUI\skins\icons\outbox.gif" />
+    <Content Include="lib\ligerUI\skins\icons\pager.gif" />
+    <Content Include="lib\ligerUI\skins\icons\photograph.gif" />
+    <Content Include="lib\ligerUI\skins\icons\plus.gif" />
+    <Content Include="lib\ligerUI\skins\icons\prev.gif" />
+    <Content Include="lib\ligerUI\skins\icons\print.gif" />
+    <Content Include="lib\ligerUI\skins\icons\process.gif" />
+    <Content Include="lib\ligerUI\skins\icons\qq.gif" />
+    <Content Include="lib\ligerUI\skins\icons\refresh.gif" />
+    <Content Include="lib\ligerUI\skins\icons\right.gif" />
+    <Content Include="lib\ligerUI\skins\icons\role.gif" />
+    <Content Include="lib\ligerUI\skins\icons\save-disabled.gif" />
+    <Content Include="lib\ligerUI\skins\icons\save.gif" />
+    <Content Include="lib\ligerUI\skins\icons\search.gif" />
+    <Content Include="lib\ligerUI\skins\icons\search2.gif" />
+    <Content Include="lib\ligerUI\skins\icons\settings.gif" />
+    <Content Include="lib\ligerUI\skins\icons\true.gif" />
+    <Content Include="lib\ligerUI\skins\icons\up.gif" />
+    <Content Include="lib\ligerUI\skins\ligerui-icons.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\form.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\grid.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\layout.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\css\style.css" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\checkboxradio.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-down-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-down.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-up-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\icon-up.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\invalid_line.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-date-icon.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-down-icon.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-focus.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-l-focus.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-l-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-l.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-r-focus.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-r-over.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text-r.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\form\text.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\grid\gridheaderbg.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\accordion-header-over.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\accordion-header.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\layout-header-over.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\layout-header.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-bg.jpg" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-left-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-over-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-item-right-bg.gif" />
+    <Content Include="lib\ligerUI\skins\Silvery\images\layout\tabs-tools.gif" />
+    <Content Include="loginold.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajaxhandler\articleEditdo.aspx" />
+    <Content Include="ajaxhandler\articlemovedo.aspx" />
+    <Content Include="ajaxhandler\articlesort.aspx" />
+    <Content Include="ajaxhandler\catalogeditdo.aspx" />
+    <Content Include="ajaxhandler\complex.aspx" />
+    <Content Include="ajaxhandler\departeditdo.aspx" />
+    <Content Include="ajaxhandler\ftpeditdo.aspx" />
+    <Content Include="ajaxhandler\Gethits.aspx" />
+    <Content Include="ajaxhandler\loadarticlelist.aspx" />
+    <Content Include="ajaxhandler\ajax.aspx" />
+    <Content Include="ajaxhandler\loadcataloglist.aspx" />
+    <Content Include="ajaxhandler\loadcatalogtree.aspx" />
+    <Content Include="ajaxhandler\loaddepartlist.aspx" />
+    <Content Include="ajaxhandler\loadloglist.aspx" />
+    <Content Include="ajaxhandler\loadmessagelist.aspx" />
+    <Content Include="ajaxhandler\produceyanz.aspx" />
+    <Content Include="bin\SiteGroupCms.DBUtility.dll" />
+    <Content Include="bin\SiteGroupCms.DBUtility.pdb" />
+    <Content Include="fs\EditFileTypes.config" />
+    <Content Include="config\conn.config" />
+    <Content Include="config\favorite.config" />
+    <None Include="ckplayer\share.xml.bak" />
+    <None Include="lib\ligerUI\skins\icons\新建 Microsoft Office Excel 工作表.xlsx" />
+    <Content Include="ajaxhandler\loadrolelist.aspx" />
+    <Content Include="ajaxhandler\loadsitelist.aspx" />
+    <Content Include="ajaxhandler\loadtemplatelist.aspx" />
+    <Content Include="ajaxhandler\loaduserlist.aspx" />
+    <Content Include="ajaxhandler\messageeditdo.aspx" />
+    <Content Include="ajaxhandler\personinfodo.aspx" />
+    <Content Include="ajaxhandler\publishajax.aspx" />
+    <Content Include="ajaxhandler\roleeditdo.aspx" />
+    <Content Include="ajaxhandler\select.aspx" />
+    <Content Include="ajaxhandler\siteeditdo.aspx" />
+    <Content Include="ajaxhandler\templatedo.aspx" />
+    <Content Include="articleEidt.aspx" />
+    <Content Include="ArticleList.aspx" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\Interop.MSScriptControl.dll" />
+    <Content Include="bin\Lucene.Net.dll" />
+    <Content Include="bin\SiteGroupCms.Dal.dll" />
+    <Content Include="bin\SiteGroupCms.Dal.pdb" />
+    <Content Include="bin\SiteGroupCms.Entity.dll" />
+    <Content Include="bin\SiteGroupCms.Entity.pdb" />
+    <Content Include="bin\SiteGroupCms.TEngine.dll" />
+    <Content Include="bin\SiteGroupCms.TEngine.pdb" />
+    <Content Include="bin\SiteGroupCms.Ui.dll" />
+    <Content Include="bin\SiteGroupCms.Ui.pdb" />
+    <Content Include="bin\SiteGroupCms.Utils.dll" />
+    <Content Include="bin\SiteGroupCms.Utils.pdb" />
+    <Content Include="catalogedit.aspx" />
+    <Content Include="fs\App_Themes\Default\css\common.css" />
+    <Content Include="fs\App_Themes\Default\css\navbar.css" />
+    <Content Include="fs\App_Themes\Default\css\style.css" />
+    <Content Include="fs\App_Themes\Default\Images\bg1.jpg" />
+    <Content Include="fs\App_Themes\Default\Images\btnbg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\btnbg.jpg" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\aac_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ace_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ain_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ai_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\amr_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\app_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\arj_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\asf_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\aspx_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\asp_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\avi_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\av_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\bin_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\bmp_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\cab_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\cad_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\cat_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\cdr_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\chm_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\com_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\cs_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\cur_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\dat_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\dll_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\dmv_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\doc_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\dot_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\dps_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\dpt_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\dwg_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\dxf_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\emf_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\eps_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ett_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\et_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\exe_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\fla_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\folder_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ftp_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\gif_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\hlp_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\html_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\htm_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\icl_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ico_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\img_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\inf_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ini_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\iso_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\jpeg_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\jpg_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\js_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\m3u_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\mdb_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\mde_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\mht_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\midi_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\mid_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\mov_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\mp3_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\mp4_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\mpeg_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\mpg_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\msi_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\nrg_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ocx_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ogg_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ogm_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\pdf_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\png_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\pot_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ppt_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\psd_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\pub_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\qt_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ram_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\rar_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\ra_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\rmvb_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\rm_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\rtf_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\swf_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\tar_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\tiff_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\tif_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\txt_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\unknown_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\url_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\vbs_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\vst_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\wave_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\wav_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\wma_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\wmd_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\wmf_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\wmv_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\wm_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\xls_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\xlt_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\xml_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype2\zip_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\aac.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ace.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ai.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ain.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\amr.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\app.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\arj.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\asp.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\aspx.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\av.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\avi.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\bin.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\bmp.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\cab.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\cad.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\cat.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\cdr.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\chm.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\chm_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\com.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\com_2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\config.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\cs.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\css.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\cur.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\dat.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\dll.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\dmv.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\doc.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\dot.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\dps.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\dpt.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\dwg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\dxf.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\emf.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\eps.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\et.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ett.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\exe.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\fla.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\folder.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ftp.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\gif.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\hlp.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\htm.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\html.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\icl.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ico.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\img.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\inf.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ini.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\iso.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\jpeg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\jpg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\js.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\m3u.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\max.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\mdb.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\mde.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\mht.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\mid.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\midi.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\mov.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\mp3.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\mp4.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\mpeg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\mpg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\msi.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\nrg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ocx.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ogg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ogm.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\pdf.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\png.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\pot.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ppt.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\psd.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\pub.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\qt.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ra.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\ram.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\rar.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\rm.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\rmvb.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\rtf.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\swf.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\tar.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\tif.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\tiff.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\txt.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\unknown.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\url.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\vbs.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\vsd.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\vss.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\vst.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\wav.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\wave.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\wm.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\wma.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\wmd.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\wmf.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\wmv.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\wps.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\wpt.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\xls.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\xlt.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\xml.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\zip.gif" />
+    <Content Include="fs\App_Themes\Default\Images\filetype\复件 folder.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\copy.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\copy_no.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\cut.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\delete_big.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\delete_big_all.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\download.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\edit.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\fs_refresh.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\home.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\new_file.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\new_folder.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\pas.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\rename.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\back.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\copy.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\copy_no.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\cut.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\delete.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\delete_big_all.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\download.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\edit.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\fs_refresh.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\home.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\new_file.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\new_folder.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\pas.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\rename.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\unzip.png" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\up.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\upload.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\small\zip.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\unzip.png" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\up.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\upload.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\zip.gif" />
+    <Content Include="fs\App_Themes\Default\Images\fsAction\复件 edit.gif" />
+    <Content Include="fs\App_Themes\Default\Images\icon_close.gif" />
+    <Content Include="fs\App_Themes\Default\Images\icon_liebiao.gif" />
+    <Content Include="fs\App_Themes\Default\Images\icon_newfile.gif" />
+    <Content Include="fs\App_Themes\Default\Images\icon_newfolder.gif" />
+    <Content Include="fs\App_Themes\Default\Images\icon_tubiao.gif" />
+    <Content Include="fs\App_Themes\Default\Images\icon_zip.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\add.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\arrow-2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\arrow.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\bg1.jpg" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\bg2.jpg" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\btnbg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\changepassword.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\config.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\date.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\del.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\delete.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\domain.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\dotline.jpg" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\edit.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\externLinkIcon.jpg" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\file.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\fns.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\icon1.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\icon2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\ico_error.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\ico_sud.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\iis.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\inputbg1.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\inputbg2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\lbnbg.jpg" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\left1.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\left2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\msg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\myfns.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\navbg1.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\navbg2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\navbg3.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\recharge.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\refreshSpace.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\right1.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\right2.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\script.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\set404.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\setdefault.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\spaceExtend.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\upload.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\writemsg.gif" />
+    <Content Include="fs\App_Themes\Default\Images\NavbarPics\zoom.gif" />
+    <Content Include="fs\App_Themes\Default\Images\no-records-addnew.jpg" />
+    <Content Include="fs\App_Themes\Default\Images\search.gif" />
+    <Content Include="fs\bin\chaokers.cn.FSManager.Controls.dll" />
+    <Content Include="fs\bin\chaokers.cn.FSManager.dll" />
+    <Content Include="fs\bin\chaokers.cn.FSManager.Upload.dll" />
+    <Content Include="fs\bin\chaokers.cn.FSManager.UserMembership.dll" />
+    <Content Include="fs\bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="fs\bin\System.Web.Extensions.Design.dll" />
+    <Content Include="fs\bin\System.Web.Extensions.dll" />
+    <Content Include="fs\Default.aspx" />
+    <Content Include="fs\DownLoad.aspx" />
+    <Content Include="fs\FileEdit.aspx" />
+    <Content Include="fs\FileList1.ascx" />
+    <Content Include="fs\FileList2.ascx" />
+    <Content Include="fs\Help\Default.aspx" />
+    <Content Include="fs\Help\Help_For_FileList1.ascx" />
+    <Content Include="fs\Help\Help_For_FileList2.ascx" />
+    <Content Include="fs\Js\CheckBoxAct.js" />
+    <Content Include="fs\Js\SetButtonBehavior.js" />
+    <Content Include="fs\PageTemplates\asp.asp" />
+    <Content Include="fs\PageTemplates\aspx.aspx" />
+    <Content Include="fs\PageTemplates\css.css" />
+    <Content Include="fs\PageTemplates\html.html" />
+    <Content Include="fs\PageTemplates\xml.xml" />
+    <Content Include="fs\RefreshSpace.aspx" />
+    <Content Include="fs\RenameFS.aspx" />
+    <Content Include="fs\Route.aspx" />
+    <Content Include="fs\SetFSSideBar.aspx" />
+    <Content Include="fs\ShellConfig\NavBar.xml" />
+    <Content Include="fs\SpaceExtend.aspx" />
+    <Content Include="fs\SpaceInfo.aspx" />
+    <Content Include="fs\Switcher.aspx" />
+    <Content Include="fs\Upload.aspx" />
+    <Content Include="fs\Upload3\Upload.aspx" />
+    <Content Include="fs\VfyCode\VfyCodeForRefreshSpace.aspx" />
+    <Content Include="ftpsites\demo\pub\gjxw\24.htm" />
+    <Content Include="ftpsites\demo\pub\gjxw\25.htm" />
+    <Content Include="ftpsites\demo\pub\gjxw\26.htm" />
+    <Content Include="ftpsites\demo\pub\gjxw\27.htm" />
+    <Content Include="ftpsites\demo\pub\gjxw\28.htm" />
+    <Content Include="ftpsites\demo\pub\gjxw\29.htm" />
+    <Content Include="ftpsites\demo\pub\gjxw\30.htm" />
+    <Content Include="ftpsites\demo\pub\gjxw\31.htm" />
+    <Content Include="ftpsites\demo\pub\gjxw\39.htm" />
+    <Content Include="ftpsites\demo\pub\gjxw\78.htm" />
+    <Content Include="ftpsites\demo\pub\gnxw\cjxw\47.htm" />
+    <Content Include="ftpsites\demo\pub\gnxw\tyxw\77.htm" />
+    <Content Include="ftpsites\demo\pub\gnxw\tyxw\index.html" />
+    <Content Include="ftpsites\demo\pub\gnxw\tyxw\lqxw\75.htm" />
+    <Content Include="ftpsites\demo\pub\gnxw\tyxw\lqxw\76.htm" />
+    <Content Include="ftpsites\demo\pub\gnxw\tyxw\lqxw\79.htm" />
+    <Content Include="ftpsites\demo\pub\gnxw\tyxw\lqxw\80.htm" />
+    <Content Include="ftpsites\demo\pub\gnxw\tyxw\lqxw\81.htm" />
+    <Content Include="ftpsites\demo\pub\gnxw\tyxw\lqxw\82.htm" />
+    <Content Include="ftpsites\demo\pub\gnxw\tyxw\zqxw\71.htm" />
+    <Content Include="ftpsites\demo\pub\gnxw\tyxw\zqxw\74.htm" />
+    <Content Include="ftpsites\demo\pub\index.html" />
+    <Content Include="index.aspx" />
+    <Content Include="lib\css\menu.css" />
+    <Content Include="lib\images\index\media.jpg" />
+    <Content Include="loadbasedate.aspx" />
+    <Content Include="movecatalog.aspx" />
+    <Content Include="departedit.aspx" />
+    <Content Include="departlist.aspx" />
+    <Content Include="ftpedit.aspx" />
+    <Content Include="lib\images\ui\button1.gif" />
+    <Content Include="lib\images\ui\button2.gif" />
+    <Content Include="lib\images\ui\gridalt.gif" />
+    <Content Include="lib\images\ui\gridbar.jpg" />
+    <Content Include="lib\images\ui\toggle.gif" />
+    <Content Include="lib\jquery.form.js" />
+    <Content Include="loglist.aspx" />
+    <Content Include="messageedit.aspx" />
+    <Content Include="messagelist.aspx" />
+    <Content Include="personinfo.aspx" />
+    <Content Include="roleedit.aspx" />
+    <Content Include="rolelist.aspx" />
+    <Content Include="siteedit.aspx" />
+    <Content Include="sitelist.aspx" />
+    <Content Include="templateEdit.aspx" />
+    <Content Include="templatelist.aspx" />
+    <Content Include="tongji.aspx" />
+    <Content Include="userlist.aspx" />
+    <Content Include="welcome.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiteGroupCms.Dal\SiteGroupCms.Dal.csproj">
+      <Project>{275ACE9D-5C4A-4F9F-B230-A6728D39697D}</Project>
+      <Name>SiteGroupCms.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiteGroupCms.DBUtility\SiteGroupCms.DBUtility.csproj">
+      <Project>{766FE721-218A-4645-9DEC-C4FFDD82F147}</Project>
+      <Name>SiteGroupCms.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiteGroupCms.Entity\SiteGroupCms.Entity.csproj">
+      <Project>{E1640E02-C874-4524-A378-50885338261E}</Project>
+      <Name>SiteGroupCms.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiteGroupCms.Ui\SiteGroupCms.Ui.csproj">
+      <Project>{9EDEFB49-20E4-479E-8A82-0C051BB28915}</Project>
+      <Name>SiteGroupCms.Ui</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiteGroupCms.Utils\SiteGroupCms.Utils.csproj">
+      <Project>{E42D51BB-0368-4BBC-BF69-89F11B42E675}</Project>
+      <Name>SiteGroupCms.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="attached\file\" />
+    <Folder Include="attached\media\" />
+    <Folder Include="kindeditor\attached\" />
+    <Folder Include="templates\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>38205</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

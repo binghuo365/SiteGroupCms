@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Switcher.aspx.cs" Inherits="MSManager.Web.Switcher" %>

@@ -1,0 +1,272 @@
+BODY 
+{
+    MARGIN: 0px;
+	text-align:center;
+	FONT-SIZE: 12px; 
+	font-family:宋体;
+	background-color:#ffffff;
+}
+td
+{
+	font-size:12px;
+}
+A:link
+{
+	text-decoration:none;
+	color:#0066CC;
+}
+A:visited
+{
+	text-decoration:none;
+	color:#0066CC;
+}
+A:active
+{
+	text-decoration:none;
+	color:Red;
+}
+A:hover
+{
+	text-decoration:none;
+	color:Red;
+}
+a.blue_14:link,a.blue_14:visited{
+	font-size:14px;
+	text-decoration:none;
+	color: #0066CC;
+}
+A.blue:active,a.blue_14:hover{
+	font-size:14px;
+	color: Red;
+}
+.toptitle{
+	width:100%;
+	border-bottom:#CCCCCC 1px solid;
+	text-align:left;
+	clear:both;
+	font-size:14px;
+	font-weight:bold;
+	line-height:250%;
+	letter-spacing:2px;
+}
+#content{
+	width:100%;
+	text-align:left;
+}
+
+#foot{
+	padding:10px;
+	background-color:#73a2d6;
+	color:#fff;
+}
+#main{
+	padding:5px;
+	margin:20px 0px 0px 0px;
+	width:770px;
+	height:500px;
+	border:#eee 8px solid;
+}
+#head{
+	padding:5px;
+	margin:0px;
+	line-height:10px;
+	font-size:26px;
+	font-family:"宋体,Arial";
+	background-color:#73a2d6;
+	color:#fff;
+	background-image:url(head_back.jpg);
+	background-repeat:repeat-x;
+}
+#head span{
+	font-size:18px;
+	font-family:"宋体,Arial";
+}
+A.white1:link,A.white1:visited,A.white1:active,A.white1:hover {
+    text-decoration:none;color:#ffffff;LINE-HEIGHT: 150%;
+}
+
+.list{
+	width:100%;
+	margin:5px 0px 10px 25x;
+}
+.list ul{
+	list-style-type:none;
+	margin:0
+}
+.list ul li{
+	font-size:14px;
+	float:left;
+	text-align:left;
+	line-height:200%
+}
+
+.list_warning{
+	width:100%;
+	margin:5px 0px 10px 25x;
+}
+.list_warning ul{
+	list-style-type:none;
+	margin:0
+}
+.list_warning ul li{
+	font-size:13px;
+	float:left;
+	text-align:left;
+	line-height:200%
+}
+.oper{
+	width:100%;
+}
+
+a.yellow:visited
+{
+	color:yellow;
+	text-decoration:none;
+	font-size:12px
+}
+a.yellow:link
+{
+	color:yellow;
+	text-decoration:none;
+	font-size:12px
+}
+a.yellow:hover
+{
+	color:#FFFFFF;
+	font-size:12px
+}
+.width_1{
+	width:99%;
+}
+.width_2{
+	width:49%;
+}
+.width_3{
+	width:31%
+}
+.width_4{
+	width:23%;
+}
+.align_left{
+	text-align:left;
+	clear:both
+}
+.align_right{
+	text-align:right;
+	clear:both;
+}
+.align_center{
+	text-align:center;
+	clear:both;
+}
+.input_btn
+{
+	font-family: "Tahoma", "宋体";
+    font-size: 11px; color: #fff;
+    border: 1px #0066cc solid;
+    background-color: #0066cc;
+    CURSOR: hand;
+    font-style: normal ;
+}
+.input_txt
+{
+	font-size:12px;
+	border:1px #bbb solid;
+	
+}
+
+.input_btn_l
+{
+	border-top:2px solid #FEFEFE;
+	border-right:2px solid #666666;
+	border-bottom:2px solid #666666;
+	border-left:2px solid #FEFEFE;
+	padding-top:4px; 
+	height:32px;
+	font-size:14px;
+	cursor:hand;
+}
+.defaultBtn
+{
+	border:1px #ffffff solid;
+	padding:2px;
+}
+.font_12{
+	font-size:12px;
+	line-height:150%
+}
+.font_14{
+	font-size:14px;
+	line-height:150%
+}
+.red_14{
+	font-size:14px;
+	color:#FF0000;
+}
+.bold{
+	font-weight:bold
+	
+}
+a.green_14:link,a.green_14:visited{
+	font-size:14px;
+	text-decoration:none;
+	color: #009900;
+}
+a.green_14:active,a.green_14:hover{
+	font-size:14px;
+	color: #009900;
+}
+.bgcolor{
+	background-color:#fafafa
+}
+
+.table_tr td{
+	border-bottom:#ddd 1px solid;
+	font-size:13px
+
+}
+
+
+.noRecord
+{
+    text-align:center;
+    padding:20px;
+    font-size:14px;    
+    border:solid 1px #98B1C8;
+    border-left:0px;
+    border-right:1px;
+    background-color:#FFFAF4;
+    background-image:url(../Images/no-records-addnew.jpg);
+    background-position: 20px center;
+    background-repeat:no-repeat;
+}
+
+/****右键上下文菜单************************/
+#ul_contextMenu{
+    margin:0px;
+    padding:10px;
+    list-style-type:none;   
+}
+#ul_contextMenu li{
+    margin:0px;
+    padding:0px;
+    padding-top:6px;
+    height:20px;
+    border-bottom:dotted 1px #cccccc;
+    color:#0066CC; 
+}
+
+
+#ul_contextMenu2{
+    margin:0px;
+    padding:10px;
+    list-style-type:none;    
+}
+#ul_contextMenu2 li{
+    margin:0px;
+    padding:0px;
+    padding-top:6px;
+    height:20px;
+    border-bottom:dotted 1px #cccccc;
+    color:#0066CC; 
+}

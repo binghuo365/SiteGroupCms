@@ -1,0 +1,9 @@
+1,文章表添加点击量 clickcount
+2，文章表添加引用类型  yyarticleid
+3,添加了留言表
+  guest
+4，文章表的作者改成nvarchar字段了直接存作者名字
+5,添加repost表
+6，权限表添加了 留言管理权
+7，person表添加了imgrul
+8.userinfo 添加catalogid nvarchar（500）

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Nav>
+
+
+    <File>
+        <Item Title="文件管理" Icon="App_Themes/Default/Images/NavbarPics/file.gif" HasSubMenu="false" Location="Default.aspx"></Item>
+        <Item Title="上传文件" Icon="App_Themes/Default/Images/NavbarPics/upload.gif" HasSubMenu="false" Location="Upload.aspx"></Item>
+        <!--<Item Title="空间扩容" Icon="App_Themes/Default/Images/NavbarPics/spaceExtend.gif" HasSubMenu="false" Location="SpaceExtend.aspx"></Item>-->
+      <!-- <Item Title="刷新空间" Icon="App_Themes/Default/Images/NavbarPics/refreshSpace.gif" HasSubMenu="false" Location="RefreshSpace.aspx"></Item>      -->  
+    </File>
+
+  
+
+</Nav>
